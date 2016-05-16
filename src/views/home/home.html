@@ -1,3 +1,19 @@
-﻿<div
-    class="view-home">
+﻿<div class="view-home">
+
+    <section 
+        class="module-image-quote-cta"
+        ng-repeat="item in content.sellingPoints"
+    >
+        <figure>
+        </figure>
+        <div>
+            <q>{{item.quote.text}}</q>
+            <div>
+                <small>{{item.quote.attribution.text}}</small>
+                <br/>
+                <small>{{item.quote.attribution.caption}}</small>
+            </div>
+            <button>{{item.callToAction}}</button>
+        </div>
+    </section>
 </div>
