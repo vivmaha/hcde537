@@ -1,0 +1,26 @@
+{
+  "name": "thelastteam",
+  "version": "1.0.0",
+  "description": "prototype for hcde 537 (Univ Washington)",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "^1.4.9",
+    "angular-animate": "^1.4.9",
+    "angular-route": "^1.4.9",
+    "autoprefixer": "^6.3.1",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
