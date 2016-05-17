@@ -13,8 +13,6 @@
         margin: 4px;
         height: 40px;
         width: 40px;
-        background-image: url('/images/placeholder.png');
-        background-size: 100% 100%;
         flex-shrink: 0;
     }
     &>h1 {
@@ -36,8 +34,7 @@
         border-bottom: 1px solid black;
         position: fixed;
         top:0;
-        right:0;
-         @include add-horizontal-space-between-children(20px);
+        right:0;         
         &>a {
             text-decoration: underline;            
         }            
@@ -46,7 +43,11 @@
             margin-right: 10px;
         }
     }
-    
+    &:not(.scrolled) {
+        &>div {
+            @include add-horizontal-space-between-children(20px);
+        }
+    }
     &.scrolled {
         &>div {
             &>a {

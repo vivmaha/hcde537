@@ -18,6 +18,11 @@ h1 {
     margin:0;
 }
 
+figure {
+    background-image: url('/images/placeholder.png');
+    background-size: 100% 100%;
+}
+
 // Move to helpers.scss
 @mixin add-space-between-children($amount) {
     &>*:not(:first-child) {
@@ -31,6 +36,7 @@ h1 {
 }
 
 @mixin flex-stack() {
+    flex-wrap: wrap;
     &>* {
         flex-basis: 100%;
     }
@@ -57,4 +63,5 @@ body {
 
 @import "modules/selling-point/selling-point.scss";
 @import "modules/header/header.scss";
+@import "modules/footer/footer.scss";
 @import "views/home/home.scss";

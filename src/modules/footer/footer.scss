@@ -1,0 +1,30 @@
+.tlt-footer {
+    border-top: 1px solid black;
+    background:white;
+    display: flex;
+    align-items: center;
+    @include flex-stack();
+    
+    &>div {
+        display: flex;
+        justify-content: center;
+        &>figure {
+            height: 40px;
+            width: 40px;            
+        }
+    }
+    &>div+div {
+        &>ul {
+            list-style: none;
+            text-align: center;
+                    
+            &>li {
+                text-transform: uppercase;
+                display: inline-block;
+                font-weight: bold;
+                margin:20px;
+            }    
+        }
+        
+    }
+}

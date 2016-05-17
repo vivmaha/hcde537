@@ -4,8 +4,6 @@
     
     &>figure {
         flex-basis: 60%;
-        background-image: url('/images/placeholder.png');
-        background-size: 100% 100%;
         margin:0;
     }
     
@@ -15,7 +13,6 @@
         display: flex;
         align-content: center;
         align-items: center;
-        flex-wrap: wrap;
         @include add-space-between-children(20px);
         @include flex-stack();
         &>q, &>h1 {
