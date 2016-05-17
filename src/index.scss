@@ -1,18 +1,9 @@
-body {
-    margin:0;
-}
-
 // Move to colors.scss
 $background-color: #EEEEEE;
 $foreground-color: #262626;
 $background-accent-color : #666666;
 
 // Move to styles.scss
-body {
-    background: $background-color;
-    color:$foreground-color;
-}
-
 button {
     border: none;
     background: $background-accent-color;
@@ -33,10 +24,73 @@ h1 {
         margin-top:#{$amount};
     }
 }
+@mixin add-horizontal-space-between-children($amount) {
+    &>*:not(:first-child) {
+        margin-left:#{$amount};
+    }
+}
 
 @mixin flex-stack() {
     &>* {
         flex-basis: 100%;
+    }
+}
+
+@mixin children-inline-block() {
+    &>* {
+        display: inline-block;
+    }
+}
+
+body {
+    background: $background-color;
+    color:$foreground-color;
+}
+
+
+body {
+    margin:0;
+    background: $background-color;
+    color:$foreground-color;
+    
+    font-family: sans-serif;
+    &>header {
+        @include children-inline-block();
+        background:white;
+        border-bottom: 1px solid $foreground-color;
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        
+        &>figure {
+            margin: 4px;
+            height: 40px;
+            width: 40px;
+            background-image: url('/images/placeholder.png');
+            background-size: 100% 100%;
+            flex-shrink: 0;
+        }
+        &>h1 {
+            margin-left: 10px;
+            flex-shrink: 0;
+        }
+        &>ul {
+            @include add-horizontal-space-between-children(20px);
+            &>li {
+                display: inline;
+            }
+            flex-shrink: 0;
+        }
+        &>div {
+            height: 30px;
+            background: white;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            position: fixed;
+            top:0;
+            right:0;
+            padding: 10px;
+        }
     }
 }
 
