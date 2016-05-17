@@ -7,12 +7,18 @@
         <figure>
         </figure>
         <div>
-            <q>{{item.quote.text}}</q>
-            <div>
+
+            <q ng-if-start="item.type == 'quotation'">{{item.quote.text}}</q>
+            <div ng-if-end>
                 <small>{{item.quote.attribution.text}}</small>
                 <br/>
                 <small>{{item.quote.attribution.caption}}</small>
             </div>
+
+            <h1 ng-if-start="item.type == 'checklist'">{{item.checklist.title}}</h1>
+            <ul ng-if-end>
+                <li ng-repeat="item in item.checklist.items">{{item}}</li>
+            </ul>
             <button>{{item.callToAction}}</button>
         </div>
     </section>

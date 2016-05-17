@@ -15,13 +15,24 @@ button {
     color:$background-color;
     outline: 2px solid $foreground-color;
     text-transform: uppercase;
-    height: 30px;    
+    font-weight: bold;
+    font-size: 1.25em;  
+}
+
+h1 {
+    margin:0;
 }
 
 // Move to helpers.scss
 @mixin add-space-between-children($amount) {
     &>*:not(:first-child) {
         margin-top:#{$amount};
+    }
+}
+
+@mixin flex-stack() {
+    &>* {
+        flex-basis: 100%;
     }
 }
 
@@ -33,12 +44,14 @@ button {
         margin-right: 20px;
     }
     
+    @include add-space-between-children(40px);
+    
     .module-image-quote-cta {
         display: flex;
         height: 400px;
         
         &>figure {
-            flex-basis: 50%;
+            flex-basis: 60%;
             background-image: url('/images/placeholder.png');
             background-size: 100% 100%;
             margin:0;
@@ -52,13 +65,20 @@ button {
             align-items: center;
             flex-wrap: wrap;
             @include add-space-between-children(20px);
-            &>q {
-                flex-basis: 100%;
+            @include flex-stack();
+            &>q, &>h1 {
                 font-size: 3em;
+                font-weight: lighter;
+            }
+        }
+        
+        &:nth-child(odd) {
+            &>figure {
+                order:2;
             }
             &>div {
-                flex-basis: 100%;
-            }            
+                order:1;
+            }
         }
     }
 }
