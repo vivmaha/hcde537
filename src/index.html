@@ -16,28 +16,19 @@
     <script src="scripts/controllers.js"></script>
     <script src="scripts/directives.js"></script>
     <link href="index.css" rel="stylesheet" />
+    
+    <!-- services -->
+    <script src="scripts/services/throttled-event-listener.js"></script>
 
     <!-- modules -->
     <script src="modules/selling-point/selling-point.js"></script>
+    <script src="modules/header/header.js"></script>
 
     <!-- pages -->
     <script src="views/home/home.js"></script>
 </head>
 
 <body ng-app="indexApp">
-    <header>
-        <figure>
-        </figure>
-        <h1>ACJS</h1>
-        <ul>
-            <li>Our School</li>
-            <li>Experience Education</li>
-            <li>Contact</li>
-        </ul>
-        <div>
-            <button>Schedule Tour</button>
-        </div>
-    </header>
     <div ng-view></div>
 </body>
 
