@@ -55,9 +55,12 @@ body {
     
     font-family: sans-serif;
     &>header {
+        $header-height: 50px;
+        
         @include children-inline-block();
         background:white;
         border-bottom: 1px solid $foreground-color;
+        height: $header-height - 1px;
         display: inline-flex;
         align-items: center;
         width: 100%;
@@ -81,15 +84,20 @@ body {
             }
             flex-shrink: 0;
         }
-        &>div {
-            height: 30px;
+        &>div {            
+            height: $header-height - 1; 
+            display: flex;
+            align-items: center;
             background: white;
             border-left: 1px solid black;
             border-bottom: 1px solid black;
             position: fixed;
             top:0;
-            right:0;
-            padding: 10px;
+            right:0;            
+            &>button {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
     }
 }
