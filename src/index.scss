@@ -61,6 +61,10 @@ body {
     font-family: sans-serif;
 }
 
+[role="menuitem"]:hover {
+    text-decoration: underline;
+}
+
 @import "modules/selling-point/selling-point.scss";
 @import "modules/header/header.scss";
 @import "modules/footer/footer.scss";

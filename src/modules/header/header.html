@@ -5,10 +5,27 @@
     <figure>
     </figure>
     <h1>ACJS</h1>
-    <ul>
-        <li>Our School</li>
-        <li>Experience Education</li>
-        <li>Contact</li>
+    <ul role="menubar">
+        <li 
+            ng-repeat="item in items"
+            ng-click="onClick(item)"
+            role="menuitem"
+            aria-haspopup="true"
+            >
+            {{item.title}}            
+            <ul
+                aria-hidden="{{item.isHidden}}"
+                ng-if="item.items"
+                role="menu"
+            >
+                <li 
+                    ng-repeat="item in item.items"
+                    role="menuitem"
+                >
+                    {{item.title}}
+                </li>                
+            </ul>
+        </li>
     </ul>
     <div>
         <a>Sign in</a> 
