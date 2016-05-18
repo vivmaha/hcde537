@@ -3,52 +3,52 @@
         $scope.data = {
             heading : 'experience education',
             jumpPoints: [ {
-                heading: 'about',
-                link : '/#/our-school/about',
+                heading: 'principles',
+                link : '/#/our-school/principles',
                 items : [ {
-                    title: 'mission & philosophy',
-                    link: '/#/our-school/about/mission-and-philosophy',  
+                    title: 'the journey from infancy to kindergarten',
+                    link: '/#/our-school/principles/the-journey-from-infancy-to-kindergarten',  
                 }, {
-                    title: 'fast facts',
-                    link: '/#/our-school/about/fast-facts',  
+                    title: 'the montessori approach',
+                    link: '/#/our-school/principles/the-montessori-approach',  
                 }, {
-                    title: 'learning environment',
-                    link: '/#/our-school/about/learning-environment',  
-                }, {
-                    title: 'our staff',
-                    link: '/#/our-school/about/our-staff',  
+                    title: 'the reggio program',
+                    link: '/#/our-school/principles/the-reggio-program',  
                 }, ],
             },  {
-                heading: 'reviews',
-                link : '/#/our-school/reviews',
+                heading: 'teachings',
+                link : '/#/our-school/teachings',
                 items : [ {
-                    title: 'testimonials from parents',
-                    link: '/#/our-school/reviews/testimonials-from-parents',  
+                    title: 'joyful approach to learning',
+                    link: '/#/our-school/teachings/joyful-approach-to-learning',  
                 }, {
-                    title: 'stories about current families',
-                    link: '/#/our-school/reviews/stories-about-current-families',  
+                    title: 'teaching social skills',
+                    link: '/#/our-school/teachings/teaching-social-skills',  
                 }, {
-                    title: 'yelp reviews',
-                    link: 'http://www.yelp.com/biz/a-childs-journey-school-kirkland',  
+                    title: 'fundamentals of quality child care',
+                    link: '/#/our-school/teachings/Fundamentals-of-quality-child-care',  
                 }, {
-                    title: 'facebook reviews',
-                    link: 'https://www.facebook.com/childsjourney',  
+                    title: 'interaction between teachers and kids',
+                    link: '/#/our-school/teachings/interaction-between-teachers-and-kids',  
+                }, {
+                    title: 'individualized instruction',
+                    link: '/#/our-school/teachings/individualized-instruction',  
                 }, ],
             }, {
-                heading: 'enroll',
-                link: '/#/our-school/enroll',
+                heading: 'offerings',
+                link: '/#/our-school/offerings',
                 items : [ {
-                    title: 'admissions',
-                    link: '/#/our-school/enroll/admissions',  
+                    title: 'fresh, organic meals',
+                    link: '/#/our-school/offerings/fresh-organic-meals',  
                 }, {
-                    title: 'request enrollment information',
-                    link: '/#/our-school/enroll/request-enrollment-information',  
+                    title: 'extra sensory integration work',
+                    link: '/#/our-school/offerings/extra-sensory-integration-work',  
                 }, {
-                    title: 'schedule visit',
-                    link: '/#/our-school/enroll/schedule-visit',  
+                    title: 'weekly yoga',
+                    link: '/#/our-school/offerings/weekly-yoga',  
                 }, {
-                    title: 'download forms for registering a new child',
-                    link: '/#/our-school/enroll/download-forms-for-registering-a-new-child',  
+                    title: 'drama classes',
+                    link: '/#/our-school/offerings/drama-classes',  
                 }, ],
             },],
         }
