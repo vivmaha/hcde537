@@ -43,5 +43,13 @@ indexApp.config(['$routeProvider',
                 templateUrl: templateUrlPageTemplateLevelOne,
                 controller: 'currentFamilies',
             })
+            .when('/current-families/newsletter', {
+                templateUrl: templateUrlPageTemplateLevelTwo,
+                controller: 'newsletter',
+            })
+            .when('/current-families/forms-and-policies', {
+                templateUrl: templateUrlPageTemplateLevelTwo,
+                controller: 'formsAndPolicies',
+            })
     }
 ]);
