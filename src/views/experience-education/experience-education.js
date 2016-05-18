@@ -1,7 +1,7 @@
-﻿controllers.controller('ourSchool', ['$scope',
+﻿controllers.controller('experienceEducation', ['$scope',
     function($scope) {
         $scope.data = {
-            heading: 'our school',
+            heading : 'experience education',
             jumpPoints: [ {
                 heading: 'about',
                 link : '/#/our-school/about',

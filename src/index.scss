@@ -16,6 +16,7 @@ button {
 
 h1 {
     margin:0;
+    text-transform: capitalize;
 }
 
 a {
@@ -96,7 +97,7 @@ body {
 @import "modules/paragraph-image-gallery-section/paragraph-image-gallery-section.scss";
 @import "modules/header/header.scss";
 @import "modules/footer/footer.scss";
+@import "page-templates/level-one/level-one.scss";
 @import "views/home/home.scss";
-@import "views/our-school/our-school.scss";
 @import "views/our-school/about/about.scss";
 @import "views/our-school/about/mission-and-philosophy/mission-and-philosophy.scss";
