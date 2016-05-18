@@ -89,3 +89,15 @@ createLevelThreeController(
         'Drama classes'
     ]
 );
+
+
+createLevelThreeController(
+    'contact', 
+    [
+        'Hours of operation',
+        'Physical address',
+        'Phone number',
+        'Email address'
+    ]
+);
+

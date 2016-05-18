@@ -15,6 +15,10 @@ indexApp.config(['$routeProvider',
             .when('/', {
                 templateUrl: 'views/home/home.html',
                 controller: 'home'
+            })
+            .when('/contact', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'contact'
             })            
             .when('/our-school', {
                 templateUrl: templateUrlPageTemplateLevelOne,
