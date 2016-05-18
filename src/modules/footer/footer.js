@@ -16,7 +16,7 @@ directives.directive('tltFooter', [
                         link: "/#/current-families" 
                     }, {
                         title: "schedule tour",
-                        link: "/#/schedule-tour" 
+                        link: "/#/our-school/enroll/schedule-visit" 
                     }, { 
                         title: "facebook", 
                         link: "https://www.facebook.com/childsjourney" 
@@ -28,7 +28,7 @@ directives.directive('tltFooter', [
                         link: "/#/sitemap" 
                     }, { 
                         title: "login", 
-                        link: "/#/login" 
+                        link: "/#/current-families" 
                     }, ];
             },
             replace: true,
