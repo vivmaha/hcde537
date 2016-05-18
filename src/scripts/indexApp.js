@@ -24,10 +24,6 @@ indexApp.config(['$routeProvider',
                 templateUrl: templateUrlPageTemplateLevelTwo,
                 controller: 'about'
             })
-            .when('/our-school/enroll', {
-                templateUrl: templateUrlPageTemplateLevelTwo,
-                controller: 'enroll'
-            })
             .when('/our-school/about/mission-and-philosophy', {
                 templateUrl: templateUrlPageTemplateLevelThree,
                 controller: 'missionAndPhilosophy'
@@ -43,6 +39,26 @@ indexApp.config(['$routeProvider',
             .when('/our-school/about/our-staff', {
                 templateUrl: templateUrlPageTemplateLevelThree,
                 controller: 'ourStaff'
+            })
+            .when('/our-school/enroll', {
+                templateUrl: templateUrlPageTemplateLevelTwo,
+                controller: 'enroll'
+            })
+            .when('/our-school/enroll/admissions', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'admissions'
+            })
+            .when('/our-school/enroll/enrollment-forms', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'enrollmentForms'
+            })
+            .when('/our-school/enroll/enrollment-information', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'enrollmentInformation'
+            })
+            .when('/our-school/enroll/schedule-visit', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'scheduleVisit'
             })
             .when('/our-school/reviews', {
                 templateUrl: templateUrlPageTemplateLevelThree,

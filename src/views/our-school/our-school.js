@@ -43,13 +43,13 @@
                     link: '/#/our-school/enroll/admissions',  
                 }, {
                     title: 'request enrollment information',
-                    link: '/#/our-school/enroll/request-enrollment-information',  
+                    link: '/#/our-school/enroll/enrollment-information',  
                 }, {
                     title: 'schedule visit',
                     link: '/#/our-school/enroll/schedule-visit',  
                 }, {
                     title: 'download forms for registering a new child',
-                    link: '/#/our-school/enroll/download-forms-for-registering-a-new-child',  
+                    link: '/#/our-school/enroll/enrollment-forms',  
                 }, ],
             },],
         }
