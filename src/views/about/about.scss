@@ -1,24 +1,6 @@
 .view-about {    
     @include add-space-between-children(40px);
     
-    $height-of-leading-image: 270px;
-    
-    &>section {        
-        margin-top: 20px;
-        position: relative;
-        min-height: $height-of-leading-image;
-        &>figure {
-            margin-left:20px;
-            margin-bottom:20px;
-            float: right;
-            width: 400px;
-            height: $height-of-leading-image;
-        }
-        &+* {
-            clear:both;
-        }
-    }
-    
     &>section+section {
         display: flex;
         @include add-horizontal-space-between-children(20px);

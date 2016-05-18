@@ -18,6 +18,14 @@ h1 {
     margin:0;
 }
 
+a {
+    text-decoration: none;
+    color:currentColor;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 figure {
     margin:0;
     &>div{
@@ -73,15 +81,13 @@ body {
     font-family: sans-serif;
 }
 
-[role="menuitem"]:hover {
-    text-decoration: underline;
-}
-
 @import "modules/selling-point/selling-point.scss";
 @import "modules/sub-point/sub-point.scss";
 @import "modules/jump-point/jump-point.scss";
+@import "modules/paragraph-image-section/paragraph-image-section.scss";
 @import "modules/header/header.scss";
 @import "modules/footer/footer.scss";
 @import "views/home/home.scss";
 @import "views/about/about.scss";
 @import "views/our-school/our-school.scss";
+@import "views/mission-and-philosophy/mission-and-philosophy.scss";

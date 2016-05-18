@@ -1,0 +1,19 @@
+.tlt-paragraph-image-section {
+    &>h1 {
+        text-transform: capitalize;
+    }
+    $height-of-leading-image: 270px;
+    margin-top: 20px;
+    position: relative;
+    min-height: $height-of-leading-image;
+    &>figure {
+        margin-left:20px;
+        margin-bottom:20px;
+        float: right;
+        width: 400px;
+        height: $height-of-leading-image;
+    }
+    &+* {
+        clear:both;
+    }
+}

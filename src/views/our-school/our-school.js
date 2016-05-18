@@ -5,7 +5,7 @@
                 heading: 'about',
                 items : [ {
                     title: 'mission & philosophy',
-                    link: '/#/our-school/about',  
+                    link: '/#/our-school/about/mission-and-philosophy',  
                 }, {
                     title: 'fast facts',
                     link: '/#/our-school/about',  
