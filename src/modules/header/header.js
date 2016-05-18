@@ -4,6 +4,7 @@ directives.directive('tltHeader', ['throttledEventListener',
             controller : function($scope) {
                 $scope.items = [ {
                     title : 'our school',
+                    link : '/#/our-school' ,
                     items : [ {
                         title : 'about',
                         link : '/#/about'

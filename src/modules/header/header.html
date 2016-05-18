@@ -13,16 +13,17 @@
             ng-repeat="item in items"
             role="menuitem"
             aria-haspopup="true"
-            >
-            {{item.title}}            
+        >
+            <a ng-href="{{item.link}}">
+                {{item.title}}           
+            </a>
             <ul
                 ng-if="item.items"
                 role="menu"
             >
                 <li 
                     ng-repeat="item in item.items"
-                    role="menuitem"                    
-                    
+                    role="menuitem"
                 >
                     <a ng-href="{{item.link}}">{{item.title}}</a>                    
                 </li>                
