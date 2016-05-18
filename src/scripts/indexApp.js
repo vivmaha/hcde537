@@ -13,6 +13,10 @@ indexApp.config(['$routeProvider',
                 templateUrl: 'views/home/home.html',
                 controller: 'home'
             })
+            .when('/about', {
+                templateUrl: 'views/about/about.html',
+                controller: 'about'
+            })
             .otherwise({
                 templateUrl: 'views/home/home.html',
                 controller: 'home'

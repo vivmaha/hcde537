@@ -36,11 +36,15 @@
                 padding:0;
                 list-style: none;
                 &>li {
-                    height: $header-height;
-                    display: flex;
-                    align-items: center;
-                    padding-left: 4px;
-                    padding-right: 4px;
+                    &>a {
+                        height: $header-height;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 4px;
+                        padding-right: 4px;
+                        text-decoration: none;  
+                        color:black;  
+                    }
                 }                
                 &[aria-hidden="true"] {
                     display: none;    

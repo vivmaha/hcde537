@@ -20,9 +20,10 @@
             >
                 <li 
                     ng-repeat="item in item.items"
-                    role="menuitem"
+                    role="menuitem"                    
+                    
                 >
-                    {{item.title}}
+                    <a ng-href="{{item.link}}">{{item.title}}</a>                    
                 </li>                
             </ul>
         </li>

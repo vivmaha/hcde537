@@ -6,38 +6,5 @@
         margin-right: 20px;
     }
     
-    @include add-space-between-children(40px);
-    
-    .module-image-quote-cta {
-        display: flex;
-        height: 400px;
-        
-        &>figure {
-            flex-basis: 60%;
-            margin:0;
-        }
-        
-        &>div {
-            padding: 50px;
-            flex-basis: 40%;
-            display: flex;
-            align-content: center;
-            align-items: center;
-            @include add-space-between-children(20px);
-            @include flex-stack();
-            &>q, &>h1 {
-                font-size: 3em;
-                font-weight: lighter;
-            }
-        }
-        
-        &:nth-child(odd) {
-            &>figure {
-                order:2;
-            }
-            &>div {
-                order:1;
-            }
-        }
-    }
+    @include add-space-between-children(40px);   
 }

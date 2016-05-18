@@ -1,0 +1,9 @@
+.view-about {
+    &>section {
+        &>figure {
+            float: right;
+            height: 400px;
+            width: 400px;
+        }
+    }
+}
