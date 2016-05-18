@@ -19,6 +19,7 @@ h1 {
 }
 
 figure {
+    margin:0;
     &>div{
         height: 100%;
         width: 100%;
@@ -77,6 +78,7 @@ body {
 }
 
 @import "modules/selling-point/selling-point.scss";
+@import "modules/sub-point/sub-point.scss";
 @import "modules/header/header.scss";
 @import "modules/footer/footer.scss";
 @import "views/home/home.scss";
