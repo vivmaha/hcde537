@@ -18,10 +18,14 @@ indexApp.config(['$routeProvider',
             .when('/our-school', {
                 templateUrl: templateUrlPageTemplateLevelOne,
                 controller: 'ourSchool'
-            })            
+            })
             .when('/our-school/about', {
                 templateUrl: templateUrlPageTemplateLevelTwo,
                 controller: 'about'
+            })
+            .when('/our-school/enroll', {
+                templateUrl: templateUrlPageTemplateLevelTwo,
+                controller: 'enroll'
             })
             .when('/our-school/about/mission-and-philosophy', {
                 templateUrl: 'views/our-school/about/mission-and-philosophy/mission-and-philosophy.html',
