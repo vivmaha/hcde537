@@ -7,6 +7,12 @@
             section02 : {
                 heading: 'what makes us different',
             },
+            section03 : {
+                heading: 'partnership with families',
+            },
+            section04 : {
+                heading: 'partnership with communities',
+            },
         }
     }
 ]);

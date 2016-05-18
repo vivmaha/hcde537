@@ -1,3 +1,18 @@
 .view-mission-and-philosophy {    
-    @include add-space-between-children(40px);   
+    @include add-space-between-children(40px);
+    &>section{
+        &+section {
+            &+section{
+                &>div {
+                    display: flex;
+                    @include add-horizontal-space-between-children(20px);
+                    height: 270px;
+                    figure {
+                        height: 100%;
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }        
+    }
 }

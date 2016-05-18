@@ -1,0 +1,14 @@
+.tlt-paragraph-image-gallery-section {
+    &>h1 {
+        text-transform: capitalize;
+    }
+    &>div {
+        display: flex;
+        @include add-horizontal-space-between-children(20px);
+        height: 270px;
+        figure {
+            height: 100%;
+            flex-grow: 1;
+        }
+    }
+}
