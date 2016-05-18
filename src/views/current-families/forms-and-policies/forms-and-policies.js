@@ -5,9 +5,11 @@
                 heading: 'forms and policies',
             },
             subPoints : [ {
-                heading : 'update child records',                
+                heading : 'update child records',
+                link: '/#/current-families/forms-and-policies/update-records',
             }, {
                 heading : 'parent handbook',
+                link: '/#/current-families/forms-and-policies/parent-handbook',
             }, ]
         }
     }

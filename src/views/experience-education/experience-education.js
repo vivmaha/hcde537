@@ -101,3 +101,39 @@ createLevelThreeController(
     ]
 );
 
+createLevelThreeController(
+    'schedule', 
+    [
+        'Calendar',
+        'Weekly Menu',
+        'Holidays and closures',
+    ]
+);
+
+createLevelThreeController(
+    'currentNewsletter', 
+    [
+        'Current newsletter',
+    ]
+);
+
+createLevelThreeController(
+    'previousNewsletters', 
+    [
+        'Previous newsletters',
+    ]
+);
+
+createLevelThreeController(
+    'updateRecords', 
+    [
+        'Update child records',
+    ]
+);
+
+createLevelThreeController(
+    'parentHandBook', 
+    [
+        'parent handbook',
+    ]
+);

@@ -104,9 +104,29 @@ indexApp.config(['$routeProvider',
                 templateUrl: templateUrlPageTemplateLevelTwo,
                 controller: 'newsletter',
             })
+            .when('/current-families/newsletter/current', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'currentNewsletter',
+            })
+            .when('/current-families/newsletter/previous', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'previousNewsletters',
+            })
             .when('/current-families/forms-and-policies', {
                 templateUrl: templateUrlPageTemplateLevelTwo,
                 controller: 'formsAndPolicies',
+            })
+            .when('/current-families/forms-and-policies/update-records', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'updateRecords',
+            })
+            .when('/current-families/forms-and-policies/parent-handbook', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'parentHandBook',
+            })
+            .when('/current-families/schedule', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'schedule',
             })
     }
 ]);
