@@ -31,7 +31,13 @@ directives.directive('tltHeader', ['throttledEventListener',
                 }, {
                     title : 'contact',
                     link : '/#/contact',
-                } ];        
+                } ];   
+                if ($scope.data.isSignedIn) {
+                    $scope.callToAction = 'pay tuition';                    
+                } else {
+                    $scope.callToAction = 'schedule tour';
+                }
+                
             },
             replace: true,
             restrict: 'E',

@@ -1,7 +1,11 @@
 ﻿controllers.controller('ourSchool', ['$scope',
     function($scope) {
         $scope.data = {
+            header : {
+                isSignedIn : false,
+            },
             heading: 'our school',
+            sectionTwoHeading : 'Learn more about our school',
             jumpPoints: [ {
                 heading: 'about',
                 link : '/#/our-school/about',

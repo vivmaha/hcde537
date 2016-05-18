@@ -30,5 +30,9 @@ indexApp.config(['$routeProvider',
                 templateUrl: templateUrlPageTemplateLevelOne,
                 controller: 'experienceEducation',
             })
+            .when('/current-families', {
+                templateUrl: templateUrlPageTemplateLevelOne,
+                controller: 'currentFamilies',
+            })
     }
 ]);

@@ -31,7 +31,7 @@
         </li>
     </ul>
     <div>
-        <a>Sign in</a> 
-        <button>Schedule Tour</button>
+        <a ng-if="!data.isSignedIn" href="/#/current-families">Sign in</a> 
+        <button>{{callToAction}}</button>
     </div>
 </header>
