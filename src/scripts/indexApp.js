@@ -32,6 +32,18 @@ indexApp.config(['$routeProvider',
                 templateUrl: templateUrlPageTemplateLevelThree,
                 controller: 'missionAndPhilosophy'
             })
+            .when('/our-school/about/fast-facts', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'fastFacts'
+            })
+            .when('/our-school/about/learning-environment', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'learningEnvironment'
+            })
+            .when('/our-school/about/our-staff', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'ourStaff'
+            })
             .when('/experience-education', {
                 templateUrl: templateUrlPageTemplateLevelOne,
                 controller: 'experienceEducation',

@@ -2,11 +2,27 @@
     <tlt-header></tlt-header>
     <tlt-paragraph-image-section data="data.section01">
     </tlt-paragraph-image-section>
-    <tlt-paragraph-image-section data="data.section02">
+    <tlt-paragraph-image-section
+        ng-if="data.section02"
+        data="data.section02">
     </tlt-paragraph-image-section>
-    <tlt-paragraph-image-gallery-section data="data.section03">
+    <tlt-paragraph-image-gallery-section 
+        ng-if="data.section03"
+        data="data.section03">
     </tlt-paragraph-image-gallery-section>
-    <tlt-paragraph-image-gallery-section data="data.section04">
+    <tlt-paragraph-image-gallery-section 
+        ng-if="data.section04"
+        data="data.section04">
     </tlt-paragraph-image-gallery-section>
+    <tlt-paragraph-image-section
+        ng-if="data.section05" 
+        data="data.section05"
+    >
+    </tlt-paragraph-image-section>
+    <tlt-paragraph-image-section
+        ng-if="data.section06" 
+        data="data.section06"
+    >
+    </tlt-paragraph-image-section>
     <tlt-footer></tlt-footer>
 </div>
