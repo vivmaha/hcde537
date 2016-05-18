@@ -51,7 +51,14 @@ figure {
 body {
     background: $background-color;
     color:$foreground-color;
+    &>div>div {
+        &>section {
+            margin-left: 20px;
+            margin-right: 20px;
+        }        
+    }
 }
+
 
 
 body {
