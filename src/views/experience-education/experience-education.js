@@ -1,9 +1,6 @@
 ﻿controllers.controller('experienceEducation', ['$scope',
     function($scope) {
         $scope.data = {
-            header : {
-                isSignedIn : false,
-            },
             heading : 'experience education',
             sectionTwoHeading: 'Learn more about experience education',
             jumpPoints: [ {

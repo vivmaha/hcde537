@@ -25,9 +25,6 @@
         }
         
         $scope.content = {};
-        $scope.content.header = {
-            isSignedIn : false,
-        }
         $scope.content.sellingPoints = [ 
             new QuotationSellingPoint(
                 'Learn more about our classrooms',

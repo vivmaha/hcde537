@@ -1,5 +1,5 @@
-directives.directive('tltHeader', ['throttledEventListener',
-    function(throttledEventListener) {
+directives.directive('tltHeader', ['$location',
+    function($location) {
         return {
             controller : function($scope) {
                 $scope.items = [ {
@@ -32,12 +32,13 @@ directives.directive('tltHeader', ['throttledEventListener',
                     title : 'contact',
                     link : '/#/contact',
                 } ];   
-                if ($scope.data.isSignedIn) {
+                
+                $scope.isSignedIn = ($location.path().indexOf("/current-families") == 0);
+                if ($scope.isSignedIn) {                
                     $scope.callToAction = 'pay tuition';                    
                 } else {
                     $scope.callToAction = 'schedule tour';
-                }
-                
+                }                
             },
             replace: true,
             restrict: 'E',

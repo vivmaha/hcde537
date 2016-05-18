@@ -1,9 +1,6 @@
 ﻿controllers.controller('currentFamilies', ['$scope',
     function($scope) {
         $scope.data = {
-            header: {
-                isSignedIn : true,
-            },
             heading : 'current families',
             sectionTwoHeading: 'learn more about what\'s happening',
             jumpPoints: [ {

@@ -2,9 +2,6 @@
     function($scope) {
         
         $scope.data = {
-            header : {
-                isSignedIn : false,
-            },
             paragraphAndImageSection : {
                 heading: 'About',
             },

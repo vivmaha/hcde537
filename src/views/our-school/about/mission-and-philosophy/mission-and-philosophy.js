@@ -1,9 +1,6 @@
 ﻿controllers.controller('missionAndPhilosophy', ['$scope',
     function($scope) {
          $scope.data = {
-            header : {
-                isSignedIn : false,
-            },
             section01 : {
                 heading: 'mission and philosophy',
             },
