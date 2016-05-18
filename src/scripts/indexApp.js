@@ -72,6 +72,18 @@ indexApp.config(['$routeProvider',
                 templateUrl: templateUrlPageTemplateLevelTwo,
                 controller: 'principles'
             })
+            .when('/experience-education/principles/journey', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'journey'
+            })
+            .when('/experience-education/principles/montessori', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'montessori'
+            })
+            .when('/experience-education/principles/reggio', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'reggio'
+            })
             .when('/current-families', {
                 templateUrl: templateUrlPageTemplateLevelOne,
                 controller: 'currentFamilies',
