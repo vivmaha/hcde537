@@ -12,7 +12,7 @@ indexApp.config(['$routeProvider',
             .when('/home', {
                 templateUrl: 'views/home/home.html',
                 controller: 'home'
-            })
+            })            
             .when('/our-school', {
                 templateUrl: 'views/our-school/our-school.html',
                 controller: 'ourSchool'

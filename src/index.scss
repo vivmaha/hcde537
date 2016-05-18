@@ -19,12 +19,20 @@ h1 {
 }
 
 a {
-    text-decoration: none;
     color:currentColor;
-    &:hover {
-        text-decoration: underline;
+}
+
+header, footer {
+    // No need for underlines in the header/footer
+    // Users know that stuff in these tags are clickable
+    a {
+        text-decoration: none;        
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
+
 
 figure {
     margin:0;

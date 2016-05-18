@@ -6,15 +6,11 @@
     </div>
     <div>
         <ul>
-            <li>Our school</li>
-            <li>Experience Education</li>
-            <li>Contact</li>
-            <li>Current Families</li>
-            <li>Schedule Tour</li>
-            <li>Facebook</li>
-            <li>Yelp</li>
-            <li>Sitemap</li>
-            <li>Login</li>
+            <li ng-repeat="item in items">
+                <a ng-href="{{item.link}}">
+                    {{item.title}}
+                </a>
+            </li>
         </ul>
     <div>
 </footer>
