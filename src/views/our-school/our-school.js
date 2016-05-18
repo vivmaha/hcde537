@@ -19,7 +19,7 @@
                 }, ],
             },  {
                 heading: 'reviews',
-                link : 'testimonials from parents',
+                link : '/#/our-school/reviews',
                 items : [ {
                     title: 'testimonials from parents',
                     link: '/#/our-school/reviews/testimonials-from-parents',  

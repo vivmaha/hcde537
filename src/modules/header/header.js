@@ -4,26 +4,33 @@ directives.directive('tltHeader', ['throttledEventListener',
             controller : function($scope) {
                 $scope.items = [ {
                     title : 'our school',
-                    link : '/#/our-school' ,
+                    link : '/#/our-school',
                     items : [ {
                         title : 'about',
                         link : '/#/our-school/about'
                     }, {
                         title : 'reviews',
+                        link : '/#/our-school/reviews',
                     }, {
                         title : 'enroll',
+                        link : '/#/our-school/enroll',
                     } ],
                 }, {
                     title : 'experience education',
+                    link : '/#/experience-education',
                     items: [ {
                         title : 'principles',
+                        link : '/#/experience-education/principles',
                     }, {
                         title : 'teaching',
+                        link : '/#/experience-education/teaching',
                     }, {
-                        title : 'offering'
+                        title : 'offerings',
+                        link : '/#/experience-education/offerings',
                     } ],
                 }, {
-                    title : 'contact'
+                    title : 'contact',
+                    link : '/#/contact',
                 } ];        
             },
             replace: true,

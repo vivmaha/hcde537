@@ -9,7 +9,7 @@
 indexApp.config(['$routeProvider',
     function ($routeProvider, $sceProvider) {
         $routeProvider
-            .when('/home', {
+            .when('/', {
                 templateUrl: 'views/home/home.html',
                 controller: 'home'
             })            
@@ -18,16 +18,12 @@ indexApp.config(['$routeProvider',
                 controller: 'ourSchool'
             })            
             .when('/our-school/about', {
-                templateUrl: 'views/about/about.html',
+                templateUrl: 'views/our-school/about/about.html',
                 controller: 'about'
             })
             .when('/our-school/about/mission-and-philosophy', {
-                templateUrl: 'views/mission-and-philosophy/mission-and-philosophy.html',
+                templateUrl: 'views/our-school/about/mission-and-philosophy/mission-and-philosophy.html',
                 controller: 'missionAndPhilosophy'
             })
-            .otherwise({
-                templateUrl: 'views/home/home.html',
-                controller: 'home'
-            });
     }
 ]);
