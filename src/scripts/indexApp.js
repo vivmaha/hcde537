@@ -10,6 +10,7 @@ indexApp.config(['$routeProvider',
     function ($routeProvider, $sceProvider) {
         var templateUrlPageTemplateLevelOne = 'page-templates/level-one/level-one.html';
         var templateUrlPageTemplateLevelTwo = 'page-templates/level-two/level-two.html';
+        var templateUrlPageTemplateLevelThree = 'page-templates/level-three/level-three.html';
         $routeProvider
             .when('/', {
                 templateUrl: 'views/home/home.html',
@@ -28,7 +29,7 @@ indexApp.config(['$routeProvider',
                 controller: 'enroll'
             })
             .when('/our-school/about/mission-and-philosophy', {
-                templateUrl: 'views/our-school/about/mission-and-philosophy/mission-and-philosophy.html',
+                templateUrl: templateUrlPageTemplateLevelThree,
                 controller: 'missionAndPhilosophy'
             })
             .when('/experience-education', {
