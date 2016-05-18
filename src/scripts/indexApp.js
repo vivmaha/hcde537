@@ -17,7 +17,7 @@ indexApp.config(['$routeProvider',
                 templateUrl: 'views/our-school/our-school.html',
                 controller: 'ourSchool'
             })
-            .when('/about', {
+            .when('/our-school/about', {
                 templateUrl: 'views/about/about.html',
                 controller: 'about'
             })

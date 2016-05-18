@@ -1,3 +1,10 @@
 .view-our-school {    
-    @include add-space-between-children(40px);    
+    @include add-space-between-children(40px);
+    &>section+section {
+        &>div {
+            margin-top: 20px;
+            display: flex;
+            @include add-horizontal-space-between-children(20px);
+        }
+    }    
 }

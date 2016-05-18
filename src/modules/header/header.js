@@ -7,7 +7,7 @@ directives.directive('tltHeader', ['throttledEventListener',
                     link : '/#/our-school' ,
                     items : [ {
                         title : 'about',
-                        link : '/#/about'
+                        link : '/#/our-school/about'
                     }, {
                         title : 'reviews',
                     }, {
