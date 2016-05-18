@@ -11,13 +11,11 @@
     <ul role="menubar">
         <li 
             ng-repeat="item in items"
-            ng-click="onClick(item)"
             role="menuitem"
             aria-haspopup="true"
             >
             {{item.title}}            
             <ul
-                aria-hidden="{{item.isHidden}}"
                 ng-if="item.items"
                 role="menu"
             >

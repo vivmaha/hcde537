@@ -23,23 +23,7 @@ directives.directive('tltHeader', ['throttledEventListener',
                     } ],
                 }, {
                     title : 'contact'
-                } ];
-                
-                function closeMenus() {
-                    for (var i = 0; i < $scope.items.length; i++) {
-                        $scope.items[i].isHidden = true;
-                    }
-                }
-                closeMenus();
-                
-                $scope.onClick = function(item) {                     
-                    if (item.isHidden) {
-                        closeMenus();                    
-                        item.isHidden = false;    
-                    } else {
-                        closeMenus();
-                    }
-                }
+                } ];        
             },
             replace: true,
             restrict: 'E',
