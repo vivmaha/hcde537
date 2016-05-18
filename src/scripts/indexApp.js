@@ -44,6 +44,10 @@ indexApp.config(['$routeProvider',
                 templateUrl: templateUrlPageTemplateLevelThree,
                 controller: 'ourStaff'
             })
+            .when('/our-school/reviews', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'reviews'
+            })
             .when('/experience-education', {
                 templateUrl: templateUrlPageTemplateLevelOne,
                 controller: 'experienceEducation',

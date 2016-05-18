@@ -24,10 +24,10 @@
                 link : '/#/our-school/reviews',
                 items : [ {
                     title: 'testimonials from parents',
-                    link: '/#/our-school/reviews/testimonials-from-parents',  
+                    link: '/#/our-school/reviews',  
                 }, {
                     title: 'stories about current families',
-                    link: '/#/our-school/reviews/stories-about-current-families',  
+                    link: '/#/our-school/reviews',  
                 }, {
                     title: 'yelp reviews',
                     link: 'http://www.yelp.com/biz/a-childs-journey-school-kirkland',  
