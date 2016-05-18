@@ -9,6 +9,7 @@
 indexApp.config(['$routeProvider',
     function ($routeProvider, $sceProvider) {
         var templateUrlPageTemplateLevelOne = 'page-templates/level-one/level-one.html';
+        var templateUrlPageTemplateLevelTwo = 'page-templates/level-two/level-two.html';
         $routeProvider
             .when('/', {
                 templateUrl: 'views/home/home.html',
@@ -19,7 +20,7 @@ indexApp.config(['$routeProvider',
                 controller: 'ourSchool'
             })            
             .when('/our-school/about', {
-                templateUrl: 'views/our-school/about/about.html',
+                templateUrl: templateUrlPageTemplateLevelTwo,
                 controller: 'about'
             })
             .when('/our-school/about/mission-and-philosophy', {
