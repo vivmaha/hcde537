@@ -1,8 +1,11 @@
 ﻿controllers.controller('missionAndPhilosophy', ['$scope',
     function($scope) {
          $scope.data = {
-            paragraphAndImageSection : {
+            section01 : {
                 heading: 'mission and philosophy',
+            },
+            section02 : {
+                heading: 'what makes us different',
             },
         }
     }
