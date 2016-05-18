@@ -1,9 +1,14 @@
 .view-about {
-    &>section {
+    &>section {        
+        margin-top: 20px;
+        position: relative;
         &>figure {
             float: right;
-            height: 400px;
             width: 400px;
+            height: 270px;
+        }
+        &+* {
+            clear:both;
         }
     }
 }

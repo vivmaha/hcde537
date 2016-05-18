@@ -19,8 +19,6 @@ h1 {
 }
 
 figure {
-    height: 100%;
-    width: 100%;
     &>div{
         height: 100%;
         width: 100%;
@@ -82,3 +80,4 @@ body {
 @import "modules/header/header.scss";
 @import "modules/footer/footer.scss";
 @import "views/home/home.scss";
+@import "views/about/about.scss";
