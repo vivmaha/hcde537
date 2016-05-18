@@ -137,3 +137,10 @@ createLevelThreeController(
         'parent handbook',
     ]
 );
+
+createLevelThreeController(
+    'payTuition', 
+    [
+        'pay tuition',
+    ]
+);

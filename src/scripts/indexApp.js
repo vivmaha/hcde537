@@ -128,5 +128,9 @@ indexApp.config(['$routeProvider',
                 templateUrl: templateUrlPageTemplateLevelThree,
                 controller: 'schedule',
             })
+            .when('/current-families/pay-tuition', {
+                templateUrl: templateUrlPageTemplateLevelThree,
+                controller: 'payTuition',
+            })
     }
 ]);

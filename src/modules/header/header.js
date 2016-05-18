@@ -35,10 +35,17 @@ directives.directive('tltHeader', ['$location',
                 
                 $scope.isSignedIn = ($location.path().indexOf("/current-families") == 0);
                 if ($scope.isSignedIn) {                
-                    $scope.callToAction = 'pay tuition';                    
+                    $scope.callToAction = 'pay tuition';         
+                    $scope.callToActionLink = '/#/current-families/pay-tuition';
+                               
                 } else {
                     $scope.callToAction = 'schedule tour';
-                }                
+                    $scope.callToActionLink = '/#/our-school/enroll/schedule-visit';
+                }
+                
+                $scope.onCallToActionClick = function() {
+                      location.href = $scope.callToActionLink;
+                };        
             },
             replace: true,
             restrict: 'E',
