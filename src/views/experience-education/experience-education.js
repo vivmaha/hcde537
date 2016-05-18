@@ -17,41 +17,75 @@
                     link: '/#/experience-education/principles/reggio',  
                 }, ],
             },  {
-                heading: 'teachings',
-                link : '/#/experience-education/teachings',
+                heading: 'teaching',
+                link : '/#/experience-education/teaching',
                 items : [ {
                     title: 'joyful approach to learning',
-                    link: '/#/experience-education/teachings/joyful-approach-to-learning',  
+                    link : '/#/experience-education/teaching',  
                 }, {
                     title: 'teaching social skills',
-                    link: '/#/experience-education/teachings/teaching-social-skills',  
+                    link : '/#/experience-education/teaching',  
                 }, {
                     title: 'fundamentals of quality child care',
-                    link: '/#/experience-education/teachings/Fundamentals-of-quality-child-care',  
+                    link : '/#/experience-education/teaching',  
                 }, {
                     title: 'interaction between teachers and kids',
-                    link: '/#/experience-education/teachings/interaction-between-teachers-and-kids',  
+                    link : '/#/experience-education/teaching',  
                 }, {
                     title: 'individualized instruction',
-                    link: '/#/experience-education/teachings/individualized-instruction',  
+                    link : '/#/experience-education/teaching',  
                 }, ],
             }, {
                 heading: 'offerings',
                 link: '/#/experience-education/offerings',
                 items : [ {
                     title: 'fresh, organic meals',
-                    link: '/#/experience-education/offerings/fresh-organic-meals',  
+                    link: '/#/experience-education/offerings',  
                 }, {
                     title: 'extra sensory integration work',
-                    link: '/#/experience-education/offerings/extra-sensory-integration-work',  
+                    link: '/#/experience-education/offerings',  
                 }, {
                     title: 'weekly yoga',
-                    link: '/#/experience-education/offerings/weekly-yoga',  
+                    link: '/#/experience-education/offerings',  
                 }, {
                     title: 'drama classes',
-                    link: '/#/experience-education/offerings/drama-classes',  
+                    link: '/#/experience-education/offerings',  
                 }, ],
             },],
         }
     }
 ]);
+
+function createLevelThreeController(name, items) {
+    controllers.controller(name, ['$scope',
+        function($scope) {
+            $scope.data = {};
+            for (var i = 0; i < items.length; i++) {
+                $scope.data['section0' + (i + 1)] = {
+                    heading: items[i] 
+                };                
+            }
+        }
+    ]);
+}
+
+createLevelThreeController(
+    'teaching', 
+    [
+        'Joyful approach to learning',
+        'Teaching social skills',
+        'Fundamentals of quality child care',
+        'Interaction between teachers and kids',
+        'Individualized instruction'
+    ]
+);
+
+createLevelThreeController(
+    'offerings', 
+    [
+        'Fresh, organic meals',
+        'Extra sensory integration work',
+        'Weekly yoga',
+        'Drama classes'
+    ]
+);
