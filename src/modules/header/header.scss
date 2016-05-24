@@ -1,99 +1,68 @@
+@import "../../styles/helpers.scss";
+
 .tlt-header {
-    $header-height: 50px;
+    $header-height: 128px;
+    $header-margin : 19px;
     
-    @include children-inline-block();
-    background:white;
-    border-bottom: 1px solid $foreground-color;
-    height: $header-height - 1px;
-    display: inline-flex;
+    $header-cta-z-index : 1;
+    
+    height: $header-height;
+    display: flex;
     align-items: center;
-    width: 100%;
     
-    &>a {
-        display: inline-flex;
-        align-items: center;
-        &>figure {
-            margin: 4px;
-            height: 40px;
-            width: 40px;
-        }
-        &>h1 {
-            margin-left: 10px;
-        }        
+    >:nth-child(1) {
+        margin-left:$header-margin;
     }
 
-    &>ul {
-        @include add-horizontal-space-between-children(20px);
-        height: 100%;
+    >:nth-child(2) {
+        @include add-horizontal-space-between-children(32px);
         margin:0;        
         &>li {
-            display: inline-flex;
-            align-items: center;
-            height: 100%;
-            text-transform: capitalize;
-            position: relative;
-            &>a {
-                height: 100%;
-                display: inline-flex;
-                align-items: center;    
-            }
-            &>a+ul {
-                background:white;
-                border:1px solid black;
-                position: absolute;
-                top:100%;
-                min-width: 100%;
-                left:0;
-                padding:0;
-                list-style: none;
-                z-index: 1;
-                &>li {
-                    &>a {
-                        height: $header-height;
-                        display: flex;
-                        align-items: center;
-                        padding-left: 4px;
-                        padding-right: 4px;
-                    }
-                }
-                
-            }  
-            
-            &:not(:hover) {
-                &>a+ul {
-                    display: none;    
-                }
-            }          
+            display: inline;  
         }
-        flex-shrink: 0;
     }
-    &>div {            
-        height: $header-height - 1; 
+    
+    >:nth-child(3) {
+        font-size: 21.32px;
+        position: absolute;
+        right:0;
+        margin-right: $header-margin;
+        z-index: $header-cta-z-index + 1;
+    }    
+    
+    $header-cta-nudge: (($header-height - $link-button-height) / 2) - $header-margin;
+    
+    >:nth-child(4) {
+        position: fixed;        
+        top:0;
+        right:0;
+        z-index: $header-cta-z-index;
+                
+        height: $link-button-height + (2 * $header-margin) + $header-cta-nudge;
+        transform: translateY(0); 
+        
         display: flex;
         align-items: center;
-        background: white;
-        border-bottom: 1px solid black;
-        position: fixed;
-        z-index: 1;
-        top:0;
-        right:0;         
-        &>button {
-            cursor: pointer;
-            margin-left: 10px;
-            margin-right: 10px;
+        
+        transition: $transition-standard;
+        background-color:inherit;
+        
+        
+        &>a {
+            margin-top: $header-cta-nudge;
+            margin-right: $header-margin;
+            margin-left: $header-margin;
+            transition: $transition-standard;
         }
     }
-    &:not(.scrolled) {
-        &>div {
-            @include add-horizontal-space-between-children(20px);
-        }
-    }
+
     &.scrolled {
-        &>div {
+        >:nth-child(4) {            
+            transform: translateY(-$header-cta-nudge);
+            border-bottom-left-radius: 2 * $header-margin;
             &>a {
-                display: none;
+                border-bottom-left-radius: $header-margin;
             }
-            border-left: 1px solid black;    
         }
     }
 }

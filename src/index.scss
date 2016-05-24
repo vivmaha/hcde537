@@ -1,3 +1,7 @@
+// TODO : the bulk of the stuff here is to support the prototype.
+//        get rid of it
+
+
 // Move to colors.scss
 $background-color: #EEEEEE;
 $foreground-color: #262626;
@@ -70,17 +74,6 @@ figure {
     }
 }
 
-body {
-    background: $background-color;
-    color:$foreground-color;
-    &>div>div {
-        &>section {
-            margin-left: 20px;
-            margin-right: 20px;
-        }        
-    }
-}
-
 
 
 body {
@@ -90,6 +83,7 @@ body {
     font-family: sans-serif;
 }
 
+@import "styles/general.scss";
 @import "modules/selling-point/selling-point.scss";
 @import "modules/sub-point/sub-point.scss";
 @import "modules/jump-point/jump-point.scss";
@@ -97,6 +91,7 @@ body {
 @import "modules/paragraph-image-gallery-section/paragraph-image-gallery-section.scss";
 @import "modules/header/header.scss";
 @import "modules/footer/footer.scss";
+@import "modules/hero/hero.scss";
 @import "page-templates/level-one/level-one.scss";
 @import "page-templates/level-two/level-two.scss";
 @import "page-templates/level-three/level-three.scss";

@@ -1,53 +1,9 @@
 ﻿controllers.controller('home', ['$scope',
     function($scope) {
-        
-        function QuotationSellingPoint(callToAction, quote, attribution, attributionDescription) {
-            this.type = 'quotation';
-            this.callToAction = callToAction;
-            
-            this.quote = {
-                text : quote,
-                attribution : {
-                    text : attribution,
-                    caption : attributionDescription
-                }
-            };
-        }
-        
-        function ChecklistSellingPoint(callToAction, title, items) {
-            this.type = 'checklist';
-            this.callToAction = callToAction;
-            
-            this.checklist = {
-                title : title,
-                items: items,
-            }
-        }
-        
-        $scope.content = {};
-        $scope.content.sellingPoints = [ 
-            new QuotationSellingPoint(
-                'Learn more about our classrooms',
-                'Jack is always happy when I pick him up!',
-                '-Karen Smith',
-                'Mom to 4-month old Jack'
-            ),
-            new QuotationSellingPoint(
-                'Learn about our learning environment',
-                'Olivia already knows the periodic table, and she\'s only four!',
-                '-Will Edwards',
-                'Dad to 4-year old Olivia'
-            ),
-            new ChecklistSellingPoint(
-                'See our menu',
-                'Our food is:',
-                ['organic', 'fresh', 'homemade']
-            ),
-            new ChecklistSellingPoint(
-                'Meet the staff of ACJS',
-                'Meet the owner Linda',
-                ['Always available', 'Commited to ACJS', 'Passionate']
-            ),            
-        ];
+        $scope.hero = {
+            image : 'images/homepage-hero.jpg',
+            heading : 'welcome',
+            paragraph : 'A Child’s Journey School strives to be a welcoming place for both children and their parents. We are delighted at the enthusiasm we have received from our families and it is our hope that this joy and enthusiasm continues to grow.',
+        };
     }
 ]);

@@ -1,37 +1,22 @@
 <header 
-    class="tlt-header"
+    class="tlt-header theme-dark"
     ng-class="{ 'scrolled' : isScrolled }"
 >
     <a href="/#/">
         <figure>
-            <div></div>
+            <img src="/images/logo.png"/>
         </figure>
-        <h1>ACJS</h1>
     </a>
-    <ul role="menubar">
-        <li 
-            ng-repeat="item in items"
-            role="menuitem"
-            aria-haspopup="true"
-        >
-            <a ng-href="{{item.link}}">
-                {{item.title}}           
-            </a>
-            <ul
-                ng-if="item.items"
-                role="menu"
-            >
-                <li 
-                    ng-repeat="item in item.items"
-                    role="menuitem"
-                >
-                    <a ng-href="{{item.link}}">{{item.title}}</a>                    
-                </li>                
-            </ul>
+    <ul>
+        <li ng-repeat="item in items">
+            <a ng-href="{{item.link}}">{{item.title}}</a>
         </li>
     </ul>
-    <div>
-        <a ng-if="!isSignedIn" href="/#/current-families">Sign in</a>         
-        <button ng-click="onCallToActionClick()">{{callToAction}}</button>
+    <a>parents portal</a>
+    <div>        
+        <a
+            class="link-button" 
+            ng-click="onCallToActionClick()"
+        >{{callToAction}}</a>
     </div>
 </header>

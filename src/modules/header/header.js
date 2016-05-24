@@ -4,43 +4,28 @@ directives.directive('tltHeader', ['$location',
             controller : function($scope) {
                 $scope.items = [ {
                     title : 'our school',
-                    link : '/#/our-school',
-                    items : [ {
-                        title : 'about',
-                        link : '/#/our-school/about'
-                    }, {
-                        title : 'reviews',
-                        link : '/#/our-school/reviews',
-                    }, {
-                        title : 'enroll',
-                        link : '/#/our-school/enroll',
-                    } ],
+                    link : '/#/todo',
                 }, {
-                    title : 'experience education',
-                    link : '/#/experience-education',
-                    items: [ {
-                        title : 'principles',
-                        link : '/#/experience-education/principles',
-                    }, {
-                        title : 'teaching',
-                        link : '/#/experience-education/teaching',
-                    }, {
-                        title : 'offerings',
-                        link : '/#/experience-education/offerings',
-                    } ],
+                    title : 'learning approach',
+                    link : '/#/todo',
                 }, {
-                    title : 'contact',
-                    link : '/#/contact',
-                } ];   
+                    title : 'staff',
+                    link : '/#/todo',
+                }, {
+                    title : 'enrollment',
+                    link : '/#/todo',
+                }, {
+                    title : 'tuition & fees',
+                    link : '/#/todo',
+                }, ];   
                 
                 $scope.isSignedIn = ($location.path().indexOf("/current-families") == 0);
                 if ($scope.isSignedIn) {                
                     $scope.callToAction = 'pay tuition';         
-                    $scope.callToActionLink = '/#/current-families/pay-tuition';
-                               
+                    $scope.callToActionLink = '/#/todo';                               
                 } else {
-                    $scope.callToAction = 'schedule tour';
-                    $scope.callToActionLink = '/#/our-school/enroll/schedule-visit';
+                    $scope.callToAction = 'schedule a tour';
+                    $scope.callToActionLink = '/#/todo'
                 }
                 
                 $scope.onCallToActionClick = function() {
