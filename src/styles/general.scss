@@ -8,15 +8,13 @@
     height: 55px;
     line-height: 55px;
     width: 264px;
-    color:black;
-    font-family: 'Oswald', sans-serif;
+    color:black;    
     font-size: 25.17px;
-    text-transform: uppercase;
+    
     text-align: center;
 }
 
 a {
-    font-family: 'Oswald', sans-serif;
     font-size: 25.17px;
     text-transform: uppercase;
 }
@@ -25,3 +23,17 @@ figure {
     height: 100%;
     width: 100%;
 }
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;    
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+

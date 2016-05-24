@@ -1,17 +1,12 @@
-.tlt-hero {
-    height: 682px;
-    position: relative;
-    &>figure {
-        position: absolute;
-        top:0;
-        overflow: hidden;
-        &>img {
-            max-width: 100%;
-        }   
-    }
-    &>h1 {
-        font-family: 'Oswald', sans-serif;
+.tlt-hero {    
+    height: 400px;
+    background-size: cover;
+    color:white;
+    padding: 140px;
+    &>h1 {        
         font-size:  83.13px;
-        color:white;
+    }
+    &>p {
+        width: 414px;
     }
 }
