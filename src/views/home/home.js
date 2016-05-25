@@ -9,22 +9,21 @@
            heading: 'What Makes us Different',
            paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
            callToAction: 'some button label',
-           theme: 'dark', 
         }, {
            heading: 'Our commitment to  learning and growing',
            paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
            callToAction: 'some button label',
-           theme: 'light', 
         }, {
            heading: 'Why people think we are  so great',
            paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
            callToAction: 'some button label',
-           theme: 'dark', 
         }, {
            heading: 'Fast Facts',
            paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
            callToAction: 'some button label',
-           theme: 'light', 
         }, ];
+        for (var i = 0; i < $scope.blades.length; i++) {
+            $scope.blades[i].theme = (i % 2 == 0) ? 'dark' : 'light';       
+        }
     }
 ]);
