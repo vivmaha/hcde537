@@ -3,3 +3,23 @@ $transition-standard: all 400ms;
 $page-padding: 140px;
 $dark-theme-background-color: #372b3e;
 $light-theme-background-color: white;
+
+@mixin flex-stack() {
+    display: flex;
+    flex-wrap: wrap;
+    &>* {
+        flex-basis: 100%;
+    }
+}
+
+@mixin add-space-between-children($amount) {
+    &>*:not(:first-child) {
+        margin-top:#{$amount};
+    }
+}
+
+@mixin add-horizontal-space-between-children($amount) {
+    &>*:not(:first-child) {
+        margin-left:#{$amount};
+    }
+}

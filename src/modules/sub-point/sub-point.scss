@@ -1,7 +1,0 @@
-.tlt-sub-point {
-    @include add-space-between-children(8px);
-    &>figure {     
-        width: 100%;
-        height: 200px;
-    }
-}

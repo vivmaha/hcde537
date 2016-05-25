@@ -1,8 +1,0 @@
-.page-template-level-two {    
-    @include add-space-between-children(40px);
-    
-    &>section+section {
-        display: flex;
-        @include add-horizontal-space-between-children(20px);
-    }
-}
