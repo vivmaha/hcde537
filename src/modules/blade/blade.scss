@@ -1,17 +1,22 @@
 .tlt-blade {
-    height: 500px;
-    display: flex;
-    align-items: center;
+    $triangle-height: 130px;
+    $rect-height: 500px;
+            
+    height: $rect-height + $triangle-height;    
     position: relative;
     &>div {
+        align-items: center;
         margin:0 $page-padding 0 auto;
+        height: $rect-height;
         width: 543px;
+        @include flex-stack();
+        align-content: center;
         &>h1 {
             font-size: 50.59px;            
-        }
+        }    
     }
     &.theme-dark {
-        >:nth-child(2) , >:nth-child(3) {
+        &>svg {
             position: absolute;
             left:0;
             width: 100%;
@@ -19,19 +24,12 @@
             &>polygon {
                 fill: $dark-theme-background-color;    
             }
-        } 
-        >:nth-child(2) {
             top:0;
             transform: translateY(-100%);
-        }
-        >:nth-child(3) {
-            bottom:0;
-            transform: scaleY(-1);
-            transform-origin: bottom;
-        }
+        } 
     }
     &.theme-light {
-        >:nth-child(2), >:nth-child(3) {
+        &>svg {
             display: none;
         }
     }
