@@ -3,20 +3,8 @@
 
 
 // Move to colors.scss
-$background-color: #EEEEEE;
 $foreground-color: #262626;
 $background-accent-color : #666666;
-
-// Move to styles.scss
-button {
-    border: none;
-    background: $background-accent-color;
-    color:$background-color;
-    outline: 2px solid $foreground-color;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.25em;  
-}
 
 h1 {
     margin:0;
@@ -79,7 +67,6 @@ figure {
 
 body {
     margin:0;
-    background: $background-color;
     color:$foreground-color;    
     font-family: sans-serif;
 }
