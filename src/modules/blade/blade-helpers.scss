@@ -1,0 +1,28 @@
+$blade-triangle-height: 130px;
+
+@mixin blade-triangle($theme) {
+    
+    // Things that are common to all themes
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 130px;
+    
+    // Variables that differ per team
+    $transform: null;
+    $fill: null;        
+    @if $theme == dark {
+        $transform: translateY(-100%);
+        $fill: $dark-theme-background-color;
+    } @else {
+        $transform: translateY(-100%) scaleX(-1);
+        $fill: $light-theme-background-color;
+    }
+
+    // Putting the variables into the css
+    transform: $transform;
+    &>polygon {
+        fill: $fill;    
+    }
+}  

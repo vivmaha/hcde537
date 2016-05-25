@@ -1,8 +1,10 @@
+@import 'blade-helpers.scss';
+
 .tlt-blade {
-    $triangle-height: 130px;
+    
     $rect-height: 500px;
             
-    height: $rect-height + $triangle-height;    
+    height: $rect-height + $blade-triangle-height;    
     position: relative;
     &>div {
         margin:0 auto 0 auto;
@@ -16,23 +18,13 @@
         }    
     }
     
-    &>svg { 
-        position: absolute;
-        left:0;
-        top:0;
-        width: 100%;
-        height: 130px;        
-    }
-    
     &.theme-dark {
         &>div {
             margin-right: $page-padding;
         }
+        
         &>svg {
-            transform: translateY(-100%);
-            &>polygon {
-                fill: $dark-theme-background-color;    
-            }
+            @include blade-triangle(dark);
         } 
     }
     &.theme-light {
@@ -40,10 +32,7 @@
             margin-left: $page-padding;
         }
         &>svg {
-            transform: translateY(-100%) scaleX(-1);
-            &>polygon {
-                fill: $light-theme-background-color;    
-            }            
+            @include blade-triangle(light);
         } 
     }
 }

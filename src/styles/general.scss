@@ -13,17 +13,16 @@
     color:black;    
     font-size: 25.17px;
     display: block;
-    text-align: center;
+    text-align: center;    
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 a {
     font-size: 25.17px;
     text-transform: uppercase;
-}
-
-figure {
-    height: 100%;
-    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, a {
