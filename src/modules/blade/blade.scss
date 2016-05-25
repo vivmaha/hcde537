@@ -10,17 +10,29 @@
             font-size: 50.59px;            
         }
     }
-    &>svg {
-        position: absolute;
-        top:0;
-        left:0;
-        width: 100%;
-        height: 130px;
-        transform: translateY(-100%);
-    }
     &.theme-dark {
-        &>svg>polygon {
-            fill: $dark-theme-background-color;
+        >:nth-child(2) , >:nth-child(3) {
+            position: absolute;
+            left:0;
+            width: 100%;
+            height: 130px;
+            &>polygon {
+                fill: $dark-theme-background-color;    
+            }
+        } 
+        >:nth-child(2) {
+            top:0;
+            transform: translateY(-100%);
+        }
+        >:nth-child(3) {
+            bottom:0;
+            transform: scaleY(-1);
+            transform-origin: bottom;
+        }
+    }
+    &.theme-light {
+        >:nth-child(2), >:nth-child(3) {
+            display: none;
         }
     }
 }

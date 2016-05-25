@@ -8,7 +8,13 @@
         $scope.blades = [ {
            heading: 'What Makes us Different',
            paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
-           callToAction: 'some button label', 
+           callToAction: 'some button label',
+           theme: 'dark', 
+        }, {
+           heading: 'Our commitment to  learning and growing ',
+           paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
+           callToAction: 'some button label',
+           theme: 'light', 
         }, ];
     }
 ]);
