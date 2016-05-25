@@ -1,5 +1,9 @@
 ﻿<div class="view-home">
     <tlt-header></tlt-header>
     <tlt-hero data="hero"></tlt-hero>
+    <tlt-blade 
+        ng-repeat="blade in blades"
+        data="blade">
+    </tlt-blade>
     <tlt-footer></tlt-footer>
 </div>

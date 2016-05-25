@@ -1,8 +1,10 @@
+@import "../../styles/helpers.scss";
+
 .tlt-hero {    
     height: 400px;
     background-size: cover;
     color:white;
-    padding: 140px;
+    padding: $page-padding;
     &>h1 {        
         font-size:  83.13px;
     }

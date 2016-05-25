@@ -1,0 +1,26 @@
+.tlt-blade {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &>div {
+        margin:0 $page-padding 0 auto;
+        width: 543px;
+        &>h1 {
+            font-size: 50.59px;            
+        }
+    }
+    &>svg {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 130px;
+        transform: translateY(-100%);
+    }
+    &.theme-dark {
+        &>svg>polygon {
+            fill: $dark-theme-background-color;
+        }
+    }
+}

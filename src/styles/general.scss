@@ -1,16 +1,18 @@
+@import "helpers.scss";
+
 .theme-dark {
-    background-color: #372b3e;
+    background-color: $dark-theme-background-color;
     color:white;
 }
 
 .link-button {
     background-color: #aedc71;
-    height: 55px;
-    line-height: 55px;
+    height: $link-button-height;
+    line-height: $link-button-height;
     width: 264px;
     color:black;    
     font-size: 25.17px;
-    
+    display: block;
     text-align: center;
 }
 
@@ -34,6 +36,10 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     margin: 0;
+}
+
+p + .link-button {
+    margin-top: 20px;
 }
 
 
