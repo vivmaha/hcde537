@@ -9,7 +9,7 @@
 indexApp.config(['$routeProvider',
     function ($routeProvider, $sceProvider) {
         
-        function createRoute(level, page) {
+        function createRoute(level, page) {            
             var levelString = 'level-' + level;
             var templateString = 'page' + page;
             return {                
@@ -19,6 +19,7 @@ indexApp.config(['$routeProvider',
         }
         
         $routeProvider
-            .when('/', createRoute(0, 'Home'));
+            .when('/', createRoute(0, 'Home'))
+            .when('/home/what-makes-us-different', createRoute(1, 'WhatMakesUsDifferent'));
     }
 ]);

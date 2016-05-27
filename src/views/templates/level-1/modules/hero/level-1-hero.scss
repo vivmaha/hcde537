@@ -1,0 +1,26 @@
+@import "../../../../../styles/helpers.scss";
+
+.tlt-hero {
+    
+    >:nth-child(1) {
+        height: 500px;
+        padding: $page-padding;
+        background-size: cover;
+     
+        &>h1 {        
+            color:white;
+            font-size:  48px;
+        }
+    }
+    
+    >:nth-child(2) {
+        background: white;
+        color:black;
+        height: 200px;        
+        padding-left: $page-padding;
+        padding-right: $page-padding;
+        &>p {
+            font-size: 14px;                        
+        }
+    }
+}
