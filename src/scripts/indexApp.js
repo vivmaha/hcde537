@@ -10,7 +10,7 @@ indexApp.config(['$routeProvider',
     function ($routeProvider, $sceProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'views/home/home.html',
+                templateUrl: 'views/pages/home/home.html',
                 controller: 'home'
             });
     }
