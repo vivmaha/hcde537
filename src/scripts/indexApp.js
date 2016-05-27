@@ -8,10 +8,17 @@
 
 indexApp.config(['$routeProvider',
     function ($routeProvider, $sceProvider) {
+        
+        function createRoute(level, page) {
+            var levelString = 'level-' + level;
+            var templateString = 'page' + page;
+            return {                
+                templateUrl: 'views/templates/' + levelString + '/' + levelString + '.html',
+                controller: templateString,
+            }
+        }
+        
         $routeProvider
-            .when('/', {
-                templateUrl: 'views/pages/home/home.html',
-                controller: 'home'
-            });
+            .when('/', createRoute(0, 'Home'));
     }
 ]);

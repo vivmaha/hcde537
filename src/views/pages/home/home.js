@@ -1,4 +1,4 @@
-﻿controllers.controller('home', ['$scope',
+﻿controllers.controller('pageHome', ['$scope',
     function($scope) {
         $scope.hero = {
             image : 'images/homepage-hero.png',
