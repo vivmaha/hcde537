@@ -9,7 +9,7 @@
     
     &.theme-dark {   
         &>svg {
-            @include blade-triangle(dark);
+            @include blade-triangle(dark, down);
         } 
     }
 }

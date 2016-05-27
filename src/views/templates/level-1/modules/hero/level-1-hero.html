@@ -4,7 +4,11 @@
     <div ng-style="style">
         <h1>{{data.heading}}</h1>    
     </div>
-    <div>    
+    <div>
         <p>{{data.paragraph}}</p>
+        <!-- todo : move this into a directive for better code sharing -->
+        <svg viewBox="0 0 10 10" preserveAspectRatio="none">
+            <polygon points="0,0 10,10 0,10.1 "/>
+        </svg>
     </div>
 </section>

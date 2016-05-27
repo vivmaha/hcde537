@@ -24,7 +24,7 @@
         }
         
         &>svg {
-            @include blade-triangle(dark);
+            @include blade-triangle(dark, down);
         } 
     }
     &.theme-light {
@@ -32,7 +32,7 @@
             margin-left: $page-padding;
         }
         &>svg {
-            @include blade-triangle(light);
+            @include blade-triangle(light, up);
         } 
     }
 }
