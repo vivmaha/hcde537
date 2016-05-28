@@ -6,10 +6,19 @@
     width:100%;
     position: relative;    
     text-align: center;
-    
-    &.theme-dark {   
-        &>svg {
-            @include blade-triangle(dark, down);
-        } 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    @include flex-stack();
+}
+
+:not(.tlt-blade)+.tlt-footer {
+    &>svg {
+        display: none;
     }
+}
+.tlt-blade+.tlt-footer {
+    &>svg {
+        @include blade-triangle(dark, down);
+    } 
 }

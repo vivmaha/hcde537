@@ -1,8 +1,3 @@
 @import "styles/general.scss";
-@import "modules/header/header.scss";
-@import "modules/footer/footer.scss";
-@import "modules/hero/hero.scss";
-@import "modules/blade/blade.scss";
-@import "views/templates/level-0/level-0.scss";
-@import "views/templates/level-1/level-1.scss";
-@import "views/templates/level-1/modules/hero/level-1-hero.scss";
+@import "modules/modules.scss";
+@import "views/templates/templates.scss";

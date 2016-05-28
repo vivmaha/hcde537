@@ -1,5 +1,12 @@
 ﻿<div class="template-level-1">
     <tlt-header></tlt-header>
-    <tlt-level-1-hero data="hero"></tlt-level-1-hero>
+    <main>
+        <tlt-level-1-hero data="hero"></tlt-level-1-hero>
+        <tlt-level-1-section
+            ng-repeat="section in sections"
+            data="section"
+        >
+        </tlt-level-1-section>
+    </main>
     <tlt-footer></tlt-footer>
 </div>

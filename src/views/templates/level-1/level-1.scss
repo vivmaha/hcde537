@@ -1,2 +1,9 @@
-.template-level-0 {
+.template-level-1 {
+    &>main {
+        @include add-space-between-children(55px);
+        margin-bottom:55px;    
+    }
 }
+
+@import "modules/hero/level-1-hero.scss";
+@import "modules/section/level-1-section.scss";

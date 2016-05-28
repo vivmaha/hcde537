@@ -1,0 +1,25 @@
+@import "../../../../../styles/helpers.scss";
+
+.tlt-level-1-section {    
+    padding-left: $page-padding;
+    padding-right: $page-padding;
+    
+    &>figure {
+      float: right;        
+      margin-left:55px;
+    }
+     
+    &>h1 {
+        font-size:  48px;
+    }
+    
+    &>p {
+        font-size: 14px;                             
+    }
+    
+    &::after { 
+        content: "";
+        display: block; 
+        clear: both;
+    }
+}
