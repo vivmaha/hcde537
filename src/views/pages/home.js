@@ -8,6 +8,7 @@
         $scope.blades = [ {
            heading: 'What Makes us Different',
            paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
+           image: 'images/pages-Homepage-blade-1.png',
            callToAction: {
                text: 'some button label',
                link: '/#/home/what-makes-us-different',
@@ -23,6 +24,7 @@
         }, {
            heading: 'Why people think we are  so great',
            paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
+           image: 'images/pages-Homepage-blade-3.png',
            callToAction: {
                text: 'some button label',
                link: '/#/',
@@ -30,6 +32,7 @@
         }, {
            heading: 'Fast Facts',
            paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
+           image: 'images/pages-Homepage-blade-4.png',
            callToAction: {
                text: 'some button label',
                link: '/#/',
