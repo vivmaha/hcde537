@@ -1,4 +1,4 @@
-$blade-triangle-height: 130px;
+$blade-triangle-height: 50px;
 
 @mixin blade-triangle($theme, $slant) {
 
@@ -7,7 +7,7 @@ $blade-triangle-height: 130px;
     left:0;
     top:0;
     width: 100%;
-    height: 130px;
+    height: $blade-triangle-height;
 
     // Variables that differ per team    
     $fill: null;    
