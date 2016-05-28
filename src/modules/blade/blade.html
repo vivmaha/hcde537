@@ -4,6 +4,9 @@
         <p>{{data.paragraph}}</p>
         <a ng-href="{{data.callToAction.link}}" class="link-button">{{data.callToAction.text}}</a>
     </div>
+    <figure>
+        <img ng-src="{{data.image}}"/>
+    </figure>
     <!-- todo : move this into a directive for better code sharing -->
     <svg viewBox="0 0 10 10" preserveAspectRatio="none">
 	    <polygon points="0,0 10,10 0,10.1 "/>
