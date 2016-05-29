@@ -19,23 +19,23 @@
            image: 'images/pages-Homepage-blade-2.png',
            callToAction: {
                text: 'some button label',
-               link: '/#/',
+               link: '/#/home/our-commitment-to-learning-and-growing',
            },
         }, {
-           heading: 'Why people think we are  so great',
+           heading: 'why families love us',
            paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
            image: 'images/pages-Homepage-blade-3.png',
            callToAction: {
                text: 'some button label',
-               link: '/#/',
+               link: '/#/home/why-families-love-us',
            },
         }, {
-           heading: 'Fast Facts',
+           heading: 'fast facts for new families',
            paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
            image: 'images/pages-Homepage-blade-4.png',
            callToAction: {
                text: 'some button label',
-               link: '/#/',
+               link: '/#/home/fast-facts-for-new-families',
            },
         }, ];
         for (var i = 0; i < $scope.blades.length; i++) {
