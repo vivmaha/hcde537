@@ -5,6 +5,19 @@ directives.directive('tltHeader', ['$location',
                 $scope.items = [ {
                     title : 'our school',
                     link : '/#/todo',
+                    items: [ {
+                        title : 'classes',
+                        link : '/#/our-school/classes'                        
+                    }, {
+                        title : 'facilities',
+                        link : '/#/our-school/facilities'                        
+                    }, {
+                        title : 'organic food',
+                        link : '/#/our-school/organic-food'                        
+                    }, {
+                        title : 'academic enrichment',
+                        link : '/#/our-school/academic-enrichment'                        
+                    }, ],
                 }, {
                     title : 'learning approach',
                     link : '/#/todo',
@@ -30,7 +43,26 @@ directives.directive('tltHeader', ['$location',
                 
                 $scope.onCallToActionClick = function() {
                       location.href = $scope.callToActionLink;
-                };        
+                };      
+                
+                function unselectItem() {
+                    for (var i = 0; i < $scope.items.length; i++) {                        
+                        $scope.items[i].isSelected = false;
+                    }
+                }  
+                
+                function selectItem(item) {
+                    unselectItem();
+                    item.isSelected = true;
+                }
+                
+                $scope.onItemClick = function(item) {
+                    selectItem(item);
+                };
+                
+                $scope.onItemUnClick = function(item) {
+                    item.isSelected = false;
+                };
             },
             replace: true,
             restrict: 'E',

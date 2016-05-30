@@ -8,8 +8,20 @@
         </figure>
     </a>
     <ul>
-        <li ng-repeat="item in items">
-            <a ng-href="{{item.link}}">{{item.title}}</a>
+        <li 
+            ng-repeat="item in items"
+            aria-expanded="{{item.isSelected}}"
+        >
+            <a ng-click="onItemClick(item)">{{item.title}}</a>
+            <div 
+                ng-show="item.isSelected" 
+                ng-click="onItemUnClick(item)">
+            </div>
+            <ul aria-hidden="{{!item.isSelected}}">
+                <li ng-repeat="item in item.items">
+                    <a ng-href="{{item.link}}">{{item.title}}</a>
+                </li>
+            </ul>
         </li>
     </ul>
     <a>parents portal</a>

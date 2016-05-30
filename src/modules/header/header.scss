@@ -14,11 +14,57 @@
         margin-left:$header-margin;
     }
 
-    >:nth-child(2) {
-        @include add-horizontal-space-between-children(32px);
-        margin:0;        
+    >:nth-child(2) {                
+        margin:0;
+        height: 100%;
         &>li {
-            display: inline;  
+            $menu-padding: 16px;
+            height: 100%;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            padding:0 $menu-padding;
+            transition:$transition-standard;
+            background-color: $dark-theme-background-color;
+            &>ul {                
+                position: absolute;
+                left:0;
+                top:100%;                
+                list-style: none;
+                padding:0;
+                width:250px;
+                background-color: inherit;   
+                &>li {
+                    padding:$menu-padding;                    
+                    transition:transform $transition-utility-duration;
+                }
+                
+                &[aria-hidden="true"] {
+                    visibility: hidden;
+                    &>li {
+                        transform:translateY(-30px);
+                    }
+                }
+                
+                &[aria-hidden="false"] {
+                    &>li {
+                        transform:translateY(0);
+                    }
+                }
+            }           
+            
+            &>div{
+                position:fixed;
+                height: 100%;
+                width: 100%;
+                left:0;
+                right:0;
+            }
+            
+            
+            &[aria-expanded="true"] {
+                background-color: #493952;
+            } 
         }
     }
     
