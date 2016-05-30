@@ -40,23 +40,21 @@
     createController(
         'what makes us different',
         {
-            paragraph : placeholderParagraph,
+            paragraph : 'All children embark on their own educational journey with enormous potential, which is nurtured through personal experience. We believe each journey, during these formative years, is more nourishing if it takes place within a warm, deeply-connected, and diverse community.',
         },
         [   
             {
-                image : placeholderImage,
                 heading : 'infancy to kindergarten',
-                paragraph : placeholderParagraph,
+                paragraph : 'Each stage of infancy and early childhood brings with it unique and exciting milestones. A Child’s Journey School is committed to the healthy intellectual, social, and emotional growth of each child during these formative years.',
             }, {
                 heading : 'joyful approach',
-                paragraph : placeholderParagraph,
+                paragraph : 'A fun, friendly, and energetic environment makes A Child’s Journey School a vibrant place to be. Teachers are enthusiastic about creating an place where children love to learn.',
             }, {
-                image : placeholderImage,
                 heading : 'commitment to safety and child security',
-                paragraph : placeholderParagraph,
+                paragraph : 'We are committed to the safety and security of your child. Through continuous supervision, classroom rules, a clean and healthy environment, and teacher-parent communication, you can be rest assured that your child is in good hands.',
             }, {
                 heading : 'partnership with families and the community',
-                paragraph : placeholderParagraph,
+                paragraph : 'From the moment you step into A Child’s Journey School, you will witness the strong sense of community that exists here. The welcoming atmosphere and rich social environment created by our devoted faculty and staff, working together with invested families, is defining trait of our program. We encourage active participation of families and want to make sure that everyone is comfortable within the community and our classrooms.',
             },
         ]
     );
@@ -64,23 +62,32 @@
     createController(
         'our commitment to learning and growing',
         {
-            paragraph : placeholderParagraph,
         },
         [   
             {
-                image : placeholderImage,
-                heading : placeholderHeading,
-                paragraph : placeholderParagraph,
+                image : 'images/pages-OurCommitmentToLearningAndGrowing-AchieveDistinction.png',
+                heading : 'Achieve Distinction',
+                paragraph : 'We celebrate the uniqueness of every child and encourage every child to explore their interests and special talents.',
             }, {
-                heading : placeholderHeading,
-                paragraph : placeholderParagraph,
+                image : 'images/pages-OurCommitmentToLearningAndGrowing-ExploreOpportunities.png',                
+                heading : 'Explore Opportunities',
+                paragraph : 'Exposure to a broad range of academic, artistic, and movement activities fosters children’s growth.',
             }, {
-                image : placeholderImage,
-                heading : placeholderHeading,
-                paragraph : placeholderParagraph,
+                image : 'images/pages-OurCommitmentToLearningAndGrowing-BecomeYourself.png',
+                heading : 'Become Yourself',
+                paragraph : 'Through maintaining a low student to teacher ratio and taking a personal approach to a student’s school experience, we support the development of each child as they become confident, conscientious, and capable.',
             }, {
-                heading : placeholderHeading,
-                paragraph : placeholderParagraph,
+                image : 'images/pages-OurCommitmentToLearningAndGrowing-CharacterDevelopment.png',
+                heading : 'Commit to Character Development',
+                paragraph : 'Strong values and conduct is fundamental to a healthy community and we purposefully encourage self-awareness, teach responsible habits of the mind and body, and promote appropriate behavioral conduct.',
+            }, {                
+                image : 'images/pages-OurCommitmentToLearningAndGrowing-InteractionTeacherKids.jpg',
+                heading : 'Interaction between teachers and kids',
+                paragraph : 'Our teachers provide a structured and loving environment for children to be immersed in lessons and engage with one another. Children are encouraged to develop their individual strengths and each child’s contribution to their community is valued. Our teachers provide parents with information about what happened during school hours each day. They want to share each child’s experiences, joys, and accomplishments with families.',
+            }, {
+                image : 'images/pages-OurCommitmentToLearningAndGrowing-IndividualInstruction.jpg',                
+                heading : 'Individualized instruction',
+                paragraph : 'The intimate size of our community enables each child to be known, valued, and guided as an individual. Teachers interact with children individually, are familiar with their development, and appreciate their differences.',
             },
         ]
     );
