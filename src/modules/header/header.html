@@ -12,7 +12,14 @@
             ng-repeat="item in items"
             aria-expanded="{{item.isSelected}}"
         >
-            <a ng-click="onItemClick(item)">{{item.title}}</a>
+            <a 
+                ng-if="item.items"
+                ng-click="onItemClick(item)">{{item.title}}
+            </a>
+            <a 
+                ng-if="item.link"
+                ng-href="{{item.link}}">{{item.title}}
+            </a>
             <div 
                 ng-show="item.isSelected" 
                 ng-click="onItemUnClick(item)">

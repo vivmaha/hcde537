@@ -27,6 +27,7 @@ module.exports = function (grunt) {
                         'angular/angular.js',
                         'angular-route/angular-route.js',
                         'angular-animate/angular-animate.js',
+                        'angular-sanitize/angular-sanitize.js',
                     ],
                     dest: 'build/node_modules'
                 }]

@@ -8,6 +8,7 @@
     "angular": "^1.4.9",
     "angular-animate": "^1.4.9",
     "angular-route": "^1.4.9",
+    "angular-sanitize": "^1.5.6",
     "autoprefixer": "^6.3.1",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",

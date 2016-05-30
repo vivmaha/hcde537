@@ -4,6 +4,6 @@
     <figure>
         <img ng-src="{{data.image}}"/>
     </figure>
-    <h1>{{data.heading}}</h1>
-    <p>{{data.paragraph}}</p>
+    <h1 ng-bind-html="data.heading"></h1>
+    <p ng-bind-html="data.paragraph"></p>
 </section>

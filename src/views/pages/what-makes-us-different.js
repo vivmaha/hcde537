@@ -25,10 +25,14 @@
         
         controllers.controller(controllerName, ['$scope',
             function($scope) {
-                $scope.hero = hero;
+                $scope.hero = hero;                
                 $scope.hero.image = getHeroImage(title);
                 $scope.hero.heading = title;
                 $scope.sections = sections;
+                
+                for (var i = 0; i < sections.length; i++) {
+                    sections[i].heading = sections[i].heading.replace(/ /g, '&nbsp;');
+                }
             }
         ]);
     }
@@ -172,7 +176,7 @@
     createController(
         'organic food',
         {
-            paragraph: 'Mealtime at A Child’s Journey School is truly a delight. The delicious meals and snacks that we provide are created from fresh, organic, and local ingredients sold by local purveyors (within 50 miles) and are homemade daily by our talented chef. We believe in offering nutritious and wholesome meals that meet children’s nutritional requirements. We encourage healthy food choices and emphasize the joy of eating. \n\nIn the upcoming years, we will be creating on-site gardens to grow some of our own food. Children will have hands-on experience with planting, upkeep, harvesting, as well as preparing and tasting foods.'
+            paragraph: 'Mealtime at A Child’s Journey School is truly a delight. The delicious meals and snacks that we provide are created from fresh, organic, and local ingredients sold by local purveyors (within 50 miles) and are homemade daily by our talented chef. We believe in offering nutritious and wholesome meals that meet children’s nutritional requirements. We encourage healthy food choices and emphasize the joy of eating.<br/><br/>In the upcoming years, we will be creating on-site gardens to grow some of our own food. Children will have hands-on experience with planting, upkeep, harvesting, as well as preparing and tasting foods.'
         },
         [
         ]
@@ -181,7 +185,7 @@
     createController(
         'academic enrichment',
         {
-            paragraph: 'Mealtime at A Child’s Journey School is truly a delight. The delicious meals and snacks that we provide are created from fresh, organic, and local ingredients sold by local purveyors (within 50 miles) and are homemade daily by our talented chef. We believe in offering nutritious and wholesome meals that meet children’s nutritional requirements. We encourage healthy food choices and emphasize the joy of eating. \n\nIn the upcoming years, we will be creating on-site gardens to grow some of our own food. Children will have hands-on experience with planting, upkeep, harvesting, as well as preparing and tasting foods.'
+            paragraph: 'Mealtime at A Child’s Journey School is truly a delight. The delicious meals and snacks that we provide are created from fresh, organic, and local ingredients sold by local purveyors (within 50 miles) and are homemade daily by our talented chef. We believe in offering nutritious and wholesome meals that meet children’s nutritional requirements. We encourage healthy food choices and emphasize the joy of eating.<br/><br/>In the upcoming years, we will be creating on-site gardens to grow some of our own food. Children will have hands-on experience with planting, upkeep, harvesting, as well as preparing and tasting foods.'
         },
         [
             {
@@ -200,6 +204,39 @@
                 image : placeholderImage,
                 heading : 'Drama Classes',
                 paragraph : 'Drama classes allow children to engage in structured creative activities and provide an outlet to express themselves while developing artistic, physical, cognitive, and inter/intrapersonal skills.',
+            },
+        ]
+    );
+    
+    createController(
+        'staff',
+        {
+        },
+        [
+            {
+                image : placeholderImage,
+                heading : 'Linda, Owner/Director',
+                paragraph : 'Linda graduated from Gonzaga University with a BS in Cognitive Psychology and a minor in Art. She completed her Masters in Marriage & Family Counseling. Linda began her career with Group Health, addressing the needs and supporting teens, youth and parents living in the community.<br/><br/>In her new position as Director/Owner of ‘A Child’s Journey School’, Linda is excited to fulfill a personal goal to help other families educate, develop, and raise their children. With a love for children and gifts of patience and communication and a creative art talent, Linda brings many diverse skills to the school. Linda certified as a Montessori teacher in 2008 and after completing her internship was rewarded with lead teacher classroom roles followed by an Assistant Montessori Director position. Linda is equally qualified for running the business and more importantly the business of education and nurturing children.<br/><br/>A longtime Pacific Northwest resident along with her husband Phil and 4 sons, Linda spends her free time volunteering in the community, supporting her sons sporting events and playing tennis. She is an avid reader and spent some of her early career in the Peace Corps.',
+            }, {
+                image : 'images/pages-Staff-JannaAllan.jpg',
+                heading : 'Janna Allan',
+                paragraph : 'Janna has been working with children for the past 3 years and greatly enjoys guiding children’s growth. She believes that infancy and preschool age is a crucial time and feels lucky to help each child become a confident learner. Janna is also a mother to two wonderful children.',
+            }, {
+                image : 'images/pages-Staff-TinaChasengnou.jpg',
+                heading : 'Tina Chasengnou',
+                paragraph : 'Tina is the instructor for the Ducklings class and has been caring for children for over 8 years. She looks forward to many rewarding years to come. She is the 4th child of 7 siblings and loves spending time with her big family.',
+            }, {
+                image : 'images/pages-Staff-KarenModdejonge.jpg',
+                heading : 'Karen Moddejonge',
+                paragraph : 'Karen has her BA in psychology and understands the different phases of infancy and early childhood extremely well. She finds that working with children has been exceptionally fulfilling and fun and her love of teaching is apparent during every lesson. She spends as much time as she can with her daughter, who was born in 2015.',
+            }, {
+                image : 'images/pages-Staff-BeckyVaughan.png',
+                heading : 'Becky Vaughan',
+                paragraph : 'Becky has been working with children for over 20 years.   You can find her assisting teachers in all of the different classrooms. Her commitment to A Child’s Journey School philosophy of creating an environment that supports the whole child, is something she strongly believes in and continuously strives to achieve on a daily basis. Becky also enjoys spending time with her 11 year old daughter and adult son.',
+            }, {
+                image : 'images/pages-Staff-LeslieWest.jpg',
+                heading : 'Leslie West',
+                paragraph : 'Leslie has been working with children for nearly 20 years. Her daughter is an alumnus of A Child’s Journey School, and she greatly values the strength of A Child’s Journey School’s community. Phonics instruction is one of the her favorite parts of the program. She especially enjoys watching as each child’s intellect, personality, and confidence blossom.',
             },
         ]
     );

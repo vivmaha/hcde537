@@ -1,6 +1,7 @@
 ﻿var indexApp = angular.module('indexApp', [
     'ngRoute',
     'ngAnimate',
+    'ngSanitize',
     'services',
     'controllers',
     'directives',
@@ -52,5 +53,6 @@ indexApp.config(['$routeProvider',
         createRoute(1, '/our-school', 'facilities');
         createRoute(1, '/our-school', 'organic food');
         createRoute(1, '/our-school', 'academic enrichment');
+        createRoute(1, '', 'staff');
     }
 ]);

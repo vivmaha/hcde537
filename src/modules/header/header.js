@@ -4,7 +4,6 @@ directives.directive('tltHeader', ['$location',
             controller : function($scope) {
                 $scope.items = [ {
                     title : 'our school',
-                    link : '/#/todo',
                     items: [ {
                         title : 'classes',
                         link : '/#/our-school/classes'                        
@@ -23,7 +22,7 @@ directives.directive('tltHeader', ['$location',
                     link : '/#/todo',
                 }, {
                     title : 'staff',
-                    link : '/#/todo',
+                    link : '/#/staff',
                 }, {
                     title : 'enrollment',
                     link : '/#/todo',
