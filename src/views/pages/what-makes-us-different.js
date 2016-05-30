@@ -194,6 +194,40 @@
         ]
     );
     
+    
+    createController(
+        'learning approach',
+        {
+        },
+        [   
+            {
+                image : 'images/pages-LearningApproach-LearningShouldBeJoyfulAndFun.jpg',
+                heading : 'Learning should be joyful and fun',
+                paragraph : 'Our play-based curriculum provides the right materials, activities, and guidance to enhance children’s cognitive, language, social-emotional, creative, and physical delopment. Children are encouraged to express themselves through music, painting, drama, song, movement, and play. These activities are intermixed with other learnings key to early success including literacy, mathematics, science, social studies and health and safety.',
+            }, {
+                image : 'images/pages-LearningApproach-PreparingForKindergarten.jpg',
+                heading : 'Preparing for kindergarten',
+                paragraph : 'We help children become independent thinkers, problem solvers, and skilled communicators. Our teachers model respectful, effective communication as well as kindness, acceptance, and consideration for others. This helps our kids develop the necessary social-emotional skills critical for success as they transition to kindergarten.',
+            }, {
+                heading : 'Preparing for kindergarten',
+                paragraph : 'The Reggio Emilia Approach is based on the principles of respect, responsibility and community. It emphasizes exploration and discovery in a supportive enriching environment based on the interests of children. This Approach surrounds and guides all that we do. It is the primary basis of our program.',
+                // todo make this work
+                callToAction : {
+                    title: 'Learn more about the Reggio Program',
+                    link: '/#/learning-approach/reggio'
+                }
+            }, {
+                heading : 'The Montessori Approach',
+                paragraph : 'Montessori education helps children become independent through opportunities to move, to dress themselves, to choose what they want to do, and to help the adults with tasks. When the children are able to do things for themselves it boosts their self-belief, self-confidence and esteem with lifelong results. We incorporate the active learning principles of the Montessori program to create a well-rounded individualized educational and developmental experience.',
+                // todo make this work
+                callToAction : {
+                    title: 'Learn more about how Montessori enhances our programs',
+                    link: '/#/learning-approach/reggio'
+                }
+            },
+        ]
+    );
+    
     createController(
         'staff',
         {

@@ -49,7 +49,9 @@ indexApp.config(['$routeProvider',
         createRoute(1, '/home', 'our commitment to learning and growing');
         createRoute(1, '/home', 'why families love us');
         createRoute(1, '/home', 'fast facts for new families');
+        createRoute(1, '', 'learning approach');
         createRoute(1, '', 'our school');
         createRoute(1, '', 'staff');
+        
     }
 ]);
