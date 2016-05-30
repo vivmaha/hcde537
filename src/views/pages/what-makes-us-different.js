@@ -95,24 +95,22 @@
     createController(
         'why families love us',
         {
-            paragraph : placeholderParagraph,
+            paragraph : 'Great programs. Fun activities. Caring staff — what’s not to love?<br/><br/>Here’s what some of our current families have to say.',
         },
         [   
             {
-                image : placeholderImage,
-                heading : placeholderHeading,
-                paragraph : placeholderParagraph,
+                heading: 'Melanie E.',
+                image : 'images/pages-WhyFamiliesLoveUs-MelanieE.jpg',                
+                paragraph : '“Great school. The staff is absolutely wonderful and all genuinely seem to enjoy doing what they do. My daughter loves going to this school and is absolutely thriving thanks to the excellent curriculum and skilled staff. Two thumbs up from me based on our experience!”',
             }, {
-                heading : placeholderHeading,
-                paragraph : placeholderParagraph,
+                heading: 'Kate M.',                
+                paragraph : '“This is our first time using all-day daycare. We were amazed by how much our toddler loves it. He looks forward to going, always seems happy there and even NAPS for two hours (something he doesn\'t do at home!) The teachers in the duckling room are lovable and caring with our kiddo and we are grateful for their attention. I appreciate the Montessori approach and the large outdoor area. Our kiddo is very active and I want this encouraged as much as possible.”',
             }, {
-                image : placeholderImage,
-                heading : placeholderHeading,
-                paragraph : placeholderParagraph,
-            }, {
-                heading : placeholderHeading,
-                paragraph : placeholderParagraph,
+                image : 'images/pages-WhyFamiliesLoveUs-CaitM.jpg',
+                heading : 'Cait M.',
+                paragraph : '“My daughter is spelling and starting to read at 3 years old thanks to the wonderful phonics program they offer. My son just turned 2 and is counting, singing the alphabet and recognizing the letters in his name. Needless to say the teachers here take pride in their classrooms and thrive on seeing these kids succeed.”',
             },
+            // TODO : add facebook and yelp
         ]
     );
     
