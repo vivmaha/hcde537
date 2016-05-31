@@ -20,6 +20,9 @@
 }
 
 :not(.tlt-blade)+.tlt-footer {
+    &>figure {
+        margin-top: 20px; 
+    }
     &>svg {
         display: none;
     }
