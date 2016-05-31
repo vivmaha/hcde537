@@ -214,7 +214,7 @@
                 heading : 'Preparing for kindergarten',
                 paragraph : 'We help children become independent thinkers, problem solvers, and skilled communicators. Our teachers model respectful, effective communication as well as kindness, acceptance, and consideration for others. This helps our kids develop the necessary social-emotional skills critical for success as they transition to kindergarten.',
             }, {
-                heading : 'Preparing for kindergarten',
+                heading : 'The Reggio Emilia Approach',
                 paragraph : 'The Reggio Emilia Approach is based on the principles of respect, responsibility and community. It emphasizes exploration and discovery in a supportive enriching environment based on the interests of children. This Approach surrounds and guides all that we do. It is the primary basis of our program.',
                 // todo make this work
                 callToAction : {
@@ -227,9 +227,34 @@
                 // todo make this work
                 callToAction : {
                     title: 'Learn more about how Montessori enhances our programs',
-                    link: '/#/learning-approach/reggio'
+                    link: '/#/learning-approach/montessori'
                 }
             },
+        ]
+    );
+    
+    createController(
+        'Montessori',
+        {
+            paragraph: '“Never help a child with a task at which he feels he can succeed.” – Maria Montessori',
+        },
+        [   
+            {
+                heading : 'The Montessori approach',
+                paragraph : 'The Montessori Method is a child-centered educational approach that fosters learning by developing a child’s natural eagerness for knowledge. It recognizes a child’s need for independence through initiating learning in a supportive, thoughtfully prepared environment. It is an approach that values the human spirit and the development of the whole child—physical, social, emotional, cognitive. AJCS combines these principles with the Reggio methods is designed to provide a well-rounded, individualized educational and developmental experience.',
+            }, {
+                heading : 'Individual development through creative learning',
+                paragraph : 'The principal aim of AJCS is to assist child in helping him/her to develop each of their potentialities as fully as possible in keeping with their unique pattern of development. Learning and discovery is encouraged through activities that children naturally enjoy. Through this approach, children develop positive attitudes towards themselves, towards learning and towards their environment. This provides a strong foundation for a lifetime of creative learning.',
+            }, {
+                heading : 'Children learn from each other',
+                paragraph : 'For children over the age of 2 ½, we have created a collaborative atmosphere for learning where children learn to help and be helped by other children. They gain an appreciation for their achievement boosting their self-esteem and are naturally challenged by their peers. Older children learn patience, tolerance and serve as role models; younger children learn courtesy, manners and conflict resolution by watching.',
+            }, {
+                heading : 'Opportunities to become independent',
+                paragraph : 'Montessori education helps the child become independent. This is achieved by giving children opportunities. Opportunities to move, to dress themselves, to choose what they want to do, and to help the adults with tasks. When the children are able to do things for themselves there is an increase in their self-belief, self-confidence and esteem that they may carry on throughout their life.',
+            }, {
+                heading : 'Developing children to their full potential',
+                paragraph : 'Every child has a right to develop his or her own fullest potential. We know that all children progress through “sensitive periods” – phases of development appropriate to learning of specific motor and cognitive skills. Montessori provides the framework for instructors to spot these phases and tune lessons to meet individual growth. We also assist the child in sharpening their powers of observation, in developing their initiative in learning and through a wide variety of sensory-discrimination activities which will enable them gain clear perceptions of quality and quantity in their environment.',
+            }, 
         ]
     );
     
@@ -239,7 +264,7 @@
         },
         [
             {
-                image : placeholderImage,
+                image : 'images/pages-Staff-Lina.png',
                 heading : 'Linda, Owner/Director',
                 paragraph : 'Linda graduated from Gonzaga University with a BS in Cognitive Psychology and a minor in Art. She completed her Masters in Marriage & Family Counseling. Linda began her career with Group Health, addressing the needs and supporting teens, youth and parents living in the community.<br/><br/>In her new position as Director/Owner of ‘A Child’s Journey School’, Linda is excited to fulfill a personal goal to help other families educate, develop, and raise their children. With a love for children and gifts of patience and communication and a creative art talent, Linda brings many diverse skills to the school. Linda certified as a Montessori teacher in 2008 and after completing her internship was rewarded with lead teacher classroom roles followed by an Assistant Montessori Director position. Linda is equally qualified for running the business and more importantly the business of education and nurturing children.<br/><br/>A longtime Pacific Northwest resident along with her husband Phil and 4 sons, Linda spends her free time volunteering in the community, supporting her sons sporting events and playing tennis. She is an avid reader and spent some of her early career in the Peace Corps.',
             }, {

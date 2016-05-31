@@ -6,7 +6,7 @@ directives.directive('tltHeader', ['$location',
                     title : 'our school',
                     link: '/#/our-school',
                 }, {
-                    title : 'learning approach',
+                    title : 'learning',
                     link : '/#/learning-approach',
                 }, {
                     title : 'staff',

@@ -1,9 +1,15 @@
 <section 
     class="tlt-level-1-section"
 >
-    <figure>
+    <figure ng-if="data.image">
         <img ng-src="{{data.image}}"/>
     </figure>
     <h1 ng-bind-html="data.heading"></h1>
     <p ng-bind-html="data.paragraph"></p>
+    <a 
+        ng-if="data.callToAction"
+        ng-href="{{data.callToAction.link}}"
+        >
+        {{data.callToAction.title}}
+    </a>
 </section>

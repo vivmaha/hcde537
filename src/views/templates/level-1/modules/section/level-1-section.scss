@@ -8,12 +8,17 @@
       float: right;        
       margin-left:55px;
       &>img {
-          max-height: 272px;
+          height: 272px;
       }
     }
      
     &>h1 {
         font-size:  48px;
+    }
+    
+    &>a {
+        margin-top: 15px;
+        display: block;
     }
     
     &::after { 
