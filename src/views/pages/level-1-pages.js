@@ -259,6 +259,31 @@
     );
     
     createController(
+        'Reggio',
+        {
+            paragraph: 'A Journey full of exploration and discovery',
+        },
+        [   
+            {
+                heading : 'The Reggio Emilia Approach',
+                paragraph : 'The Reggio Emilia Approach began in the Municipal Infant-Toddler Centers and Preschools of Reggio Emilia, Italy, and has inspired other schools all over the world. It is based on the principles of respect, responsibility and community. It emphasizes exploration and discovery in a supportive enriching environment based on the interests of children. In this approach children have some control over the direction of their learning and have many ways and opportunities to express themselves. Parents are also a key component and are viewed as important partners and collaborators.<br/><br/>This Approach surrounds and guides all that we do. It is the primary basis of our program. Some of the key components incorporated in our program include:',
+            }, {
+                heading : 'Collaborative cooperative education ',
+                paragraph : 'Communication between children, parents, and teachers/staff is emphasized. Everyone works together in spirit of cooperation and collaboration and with a common purpose. The importance of observation and documentation. Teachers create portfolios for each child filled with pictures and observations to document that child’s development and learning. Documentation reflects interactions between teachers and children and among children.',
+            }, {
+                heading : 'Daily observation and documentation ',
+                paragraph : 'Documenting children’s daily experiences and on-going projects allows teachers to gain valuable insight into the thoughts and learning of children. It can inform future activities, materials, and topics for investigation.',
+            }, {
+                heading : 'The “hundred languages of children”',
+                paragraph : 'We emphasize the use of many different “languages” or modes of expression including words, movement, music, drawing, sculpting, painting, collage, dramatic play and writing. Children are encouraged to explore their environment, express themselves and demonstrate their understanding using many different representations.',
+            }, {
+                heading : 'An enriching environment',
+                paragraph : 'The environment is often called the “third teacher.” It is safe, nurturing, engaging, stimulating and creates a feeling of belonging. Supportive learning environments are designed with children in mind; allowing babies, toddlers, & preschoolers to explore, learn and develop. Classrooms are welcoming, comfortable places that promote bonds between staff and young children. There is ample physical space. The layout encourages interaction, communication, and relationships. The arrangement of structures, objects and activities encourages problem solving and new discoveries. There are doors to the outside in each classroom. Entries and hallways as well as classroom walls capture the attention of both children and adults through photographs and displays of children’s work (often accompanied by transcriptions of their discussions).',
+            },  
+        ]
+    );
+    
+    createController(
         'staff',
         {
         },
