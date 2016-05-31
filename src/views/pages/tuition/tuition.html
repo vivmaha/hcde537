@@ -1,0 +1,25 @@
+﻿<div class="page-tuition">
+    <tlt-header></tlt-header>
+    <main>
+        <section ng-repeat="section in sections">
+            <h1>{{section.heading}}</h1>
+            <p>{{section.paragraph}}</p>
+            <table>
+                <thead>
+                    <tr>
+                        <td ng-repeat="cell in section.table.head">{{cell}}</td>
+                    </tr>
+                </thead>
+                <tbody>                
+                    <tr ng-repeat="row in section.table.body">
+                        <td ng-repeat="cell in row">{{cell}}</td>
+                    <tr>
+                </tbody>
+            </table>
+        </section>
+        <p>Questions about tuition, payment options, or fees?<br/>Please contact the A Child’s Journey School</br>(425) 820-5788</p>
+        <p>To pay tuition, please use the <a href="/#/parents-portal">Parents Portal</a>.</p>
+    </main>
+    <tlt-footer></tlt-footer>
+</div>
+

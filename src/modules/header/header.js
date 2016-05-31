@@ -15,8 +15,8 @@ directives.directive('tltHeader', ['$location',
                     title : 'enrollment',
                     link : '/#/todo',
                 }, {
-                    title : 'tuition & fees',
-                    link : '/#/todo',
+                    title : 'tuition',
+                    link : '/#/tuition',
                 }, ];   
                 
                 $scope.isSignedIn = ($location.path().indexOf("/current-families") == 0);

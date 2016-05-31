@@ -41,17 +41,27 @@ a {
     }
 }
 
-h1, h2, h3, h4, h5, h6, a, input[type="submit"] {
+h1, h2, h3, h4, h5, h6, a, input[type="submit"], thead {
     margin:0;
     font-family: 'Oswald', sans-serif;
     font-weight: lighter;
     text-transform: uppercase;    
 }
 
-p, label {
+@mixin paragraphStyle() {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    margin: 0;
+    margin: 0;    
+}
+
+p, label, tbody {
+    @include paragraphStyle();
+}
+
+p>a {
+    @include paragraphStyle();
+    text-decoration: underline;
+    text-transform: capitalize;
 }
 
 p + .link-button {
