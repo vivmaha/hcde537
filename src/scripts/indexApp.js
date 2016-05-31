@@ -64,5 +64,10 @@ indexApp.config(['$routeProvider',
             templateUrl: 'views/pages/tour/tour.html',
             controller: 'pageScheduleTour', 
         });        
+        
+        $routeProvider.when('/parents-portal', {
+            templateUrl: 'views/pages/parents-portal/parents-portal.html',
+            controller: 'pageParentsPortal', 
+        });
     }
 ]);

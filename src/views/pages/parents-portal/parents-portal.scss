@@ -1,0 +1,9 @@
+@import "../../../styles/helpers.scss";
+
+.page-parents-portal {
+    &>main{
+        &>img {
+            width: 100%;
+        }
+    }
+}

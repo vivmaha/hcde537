@@ -12,17 +12,14 @@ directives.directive('tltHeader', ['$location',
                     title : 'staff',
                     link : '/#/staff',
                 }, {
-                    title : 'enrollment',
-                    link : '/#/todo',
-                }, {
                     title : 'tuition',
                     link : '/#/tuition',
                 }, ];   
                 
-                $scope.isSignedIn = ($location.path().indexOf("/current-families") == 0);
+                $scope.isSignedIn = ($location.path().indexOf("/parents-portal") == 0);
                 if ($scope.isSignedIn) {                
                     $scope.callToAction = 'pay tuition';         
-                    $scope.callToActionLink = '/#/todo';                               
+                    $scope.callToActionLink = '';                               
                 } else {
                     $scope.callToAction = 'schedule a tour';
                     $scope.callToActionLink = '/#/schedule-tour'
