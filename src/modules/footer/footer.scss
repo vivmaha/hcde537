@@ -2,7 +2,6 @@
 @import '../blade/blade-helpers.scss';
 
 .tlt-footer {
-    height: 222px;
     width:100%;
     position: relative;    
     text-align: center;
@@ -10,6 +9,14 @@
     align-items: center;
     align-content: center;
     @include flex-stack();
+    
+    &>div {
+        margin: 20px 0;
+        display: flex;
+        &>p {
+            flex-basis: 33.33%;
+        }
+    }
 }
 
 :not(.tlt-blade)+.tlt-footer {
