@@ -53,5 +53,9 @@ indexApp.config(['$routeProvider',
         createRoute(1, '', 'our school');
         createRoute(1, '', 'staff');
         
+        $routeProvider.when('/schedule-tour', {
+            templateUrl: 'views/pages/tour/tour.html',
+            controller: 'pageScheduleTour', 
+        });        
     }
 ]);

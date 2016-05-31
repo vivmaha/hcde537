@@ -25,7 +25,7 @@ directives.directive('tltHeader', ['$location',
                     $scope.callToActionLink = '/#/todo';                               
                 } else {
                     $scope.callToAction = 'schedule a tour';
-                    $scope.callToActionLink = '/#/todo'
+                    $scope.callToActionLink = '/#/schedule-tour'
                 }
                 
                 $scope.onCallToActionClick = function() {

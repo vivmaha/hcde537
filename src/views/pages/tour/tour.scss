@@ -1,0 +1,7 @@
+@import "../../../styles/helpers.scss";
+
+.page-schedule-tour {
+    &>form {
+        margin: 40px $page-padding;
+    }
+}
