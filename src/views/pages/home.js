@@ -30,12 +30,12 @@
                link: '/#/home/why-families-love-us',
            },
         }, {
-           heading: 'fast facts for new families',
-           paragraph: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint',
+           heading: 'our school',
+           paragraph : 'A Child’s Journey School strives to be a welcoming place for both children and their parents. We are delighted at the enthusiasm we have received from our families and it is our hope that this joy and enthusiasm continues to grow.',
            image: 'images/pages-Homepage-blade-4.png',
            callToAction: {
                text: 'learn more',
-               link: '/#/home/fast-facts-for-new-families',
+               link: '/#/our-school',
            },
         }, ];
         for (var i = 0; i < $scope.blades.length; i++) {
