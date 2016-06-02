@@ -144,7 +144,7 @@
         },
         [   
             {
-                heading : 'Mision',
+                heading : 'Mission',
                 paragraph : 'Students from 12 weeks to 5 years of age will be equipped with the essential knowledge, skills, curiosity, and strength of character required to flourish as joyous children today and successful adults in the future. An exceptionally low student to teacher ratio ensures that each infant and child is known and valued.',
             }, 
             // todo: classes heading
